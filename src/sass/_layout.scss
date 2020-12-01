@@ -1,9 +1,17 @@
 .header {
-  height: 20rem;
-  background-color: yellowgreen;
+  height: 20rem; // ------------------------ Testing
+  background-color: yellowgreen; // ------------------------ Testing
 
   // For the navbar placement
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.content {
+  height: 70rem; // ------------------------ Testing
+}
+
+.footer {
+  background-color: dodgerblue; // ------------------------ Testing
 }

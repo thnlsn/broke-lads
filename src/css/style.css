@@ -11,7 +11,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #eb2f64; }
+  min-height: 100vh; }
 
 .header {
   height: 20rem;
@@ -19,6 +19,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+
+.content {
+  height: 70rem; }
+
+.footer {
+  background-color: dodgerblue; }
+
+.navigation {
+  background-color: blueviolet;
+  flex: 0 0 20%; }
 
 /*
     COLORS
