@@ -41,7 +41,8 @@ body {
   justify-content: space-between; }
 
 .content {
-  height: 70rem; }
+  height: 80rem;
+  background-color: orangered; }
 
 .footer {
   background-color: dodgerblue; }
