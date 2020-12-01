@@ -1,0 +1,9 @@
+.header {
+  height: 20rem;
+  background-color: yellowgreen;
+
+  // For the navbar placement
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
