@@ -1,3 +1,25 @@
+// :root is the global parent element, similar to html, but with higher specificity
+:root {
+  // -- designated a custom property, which is inherited to all children, hence why we declared them in the :root
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  --line: 1px solid var(--color-grey-light-2);
+} // -------------------------------------------------------------------------------------------------- Testing
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +27,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5%
 }
 
 *,
@@ -15,4 +38,9 @@ html {
 
 body {
   min-height: 100vh;
+}
+
+::selection {
+  color: var(--color-grey-light-1); // ------------------------ Testing
+  background-color: var(--color-primary); // ------------------------ Testing
 }
