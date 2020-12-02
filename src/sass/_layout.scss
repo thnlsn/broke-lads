@@ -1,7 +1,11 @@
 .header {
   height: 32.5rem; // ------------------------ Testing
   width: 100%;
-  background-color: yellowgreen; // ------------------------ Testing
+
+  background-image: radial-gradient(
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
 
   // So that the header is stuck to the top while the rest of the page scrolls over it
   position: fixed;
@@ -14,7 +18,10 @@
   &__logo-box {
     @include absolute-center(50%, 50%);
 
-    background-color: navy; // ------------------------ Testing
+    background-image: radial-gradient(
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
     height: 37.5rem; // ------------------------ Testing
     width: 37.5rem; // ------------------------ Testing
     border-radius: 50%; // Circle shaped
@@ -22,6 +29,11 @@
 
   &__text-box {
     @include absolute-center(50%, 50%);
+    background-color: transparent;
+
+    & > * {
+      border-bottom: var(--line);
+    }
   }
 }
 
@@ -36,5 +48,7 @@
 }
 
 .footer {
-  background-color: dodgerblue; // ------------------------ Testing
+  background-color: var(
+    --color-grey-dark-1
+  ); // ------------------------ Testing
 }
