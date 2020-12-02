@@ -3,17 +3,21 @@
   width: 100%;
   background-color: yellowgreen; // ------------------------ Testing
 
+  // So that the header is stuck to the top while the rest of the page scrolls over it
   position: fixed;
   top: 0;
   left: 0;
 
+  // So the rest of the page scrolls over the header
   z-index: -1;
 
   &__logo-box {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    transform: translate(50%, 50%);
+    @include absolute-center(50%, 50%);
+
+    background-color: navy; // ------------------------ Testing
+    height: 37.5rem; // ------------------------ Testing
+    width: 37.5rem; // ------------------------ Testing
+    border-radius: 50%; // Circle shaped
   }
 }
 

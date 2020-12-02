@@ -48,8 +48,12 @@ body {
   .header__logo-box {
     position: absolute;
     top: 50%;
-    bottom: 50%;
-    transform: translate(50%, 50%); }
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: navy;
+    height: 37.5rem;
+    width: 37.5rem;
+    border-radius: 50%; }
 
 .content {
   margin-top: 32.5rem;
