@@ -27,7 +27,11 @@ html {
   box-sizing: inherit; }
 
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-grey-dark-1); }
 
 ::selection {
   color: var(--color-grey-light-1);
@@ -41,14 +45,18 @@ body {
   top: 0;
   left: 0;
   z-index: -1; }
+  .header__logo-box {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%); }
 
 .content {
   margin-top: 32.5rem;
   height: 60rem;
   background-color: orangered;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
 
 .footer {
   background-color: dodgerblue; }

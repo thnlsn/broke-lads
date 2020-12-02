@@ -38,6 +38,11 @@ html {
 
 body {
   min-height: 100vh;
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-grey-dark-1);
 }
 
 ::selection {

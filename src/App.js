@@ -13,10 +13,10 @@ function App() {
             <img src={headerLogo} alt='Logo' className='header__logo' />
           </div>
           <h1 className='heading-primary'>
-            <span className='heading-primary--main'>Broke Lads</span>
+            {/*             <span className='heading-primary--main'>Broke Lads</span>
             <span className='heading-primary--sub'>
               "Savages with empty pockets"
-            </span>
+            </span> */}
           </h1>
         </header>
         <main className='content'>
