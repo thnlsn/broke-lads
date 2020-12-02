@@ -1,0 +1,32 @@
+.heading-primary {
+  // Main heading font (might become an image later on)
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 1.5rem;
+  color: var(--color-grey-light-4);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include text-stroke(
+    var(--color-grey-light-2),
+    var(--color-primary-light),
+    1px
+  );
+
+  &--main {
+    font-size: 8rem;
+    display: block; // So that the main and sub text appear on top of one another
+  }
+
+  &--sub {
+    font-size: 3rem;
+  }
+}
+
+.heading-secondary {
+  // Secondary heading font
+  font-family: 'Overlock SC', cursive;
+  color: var(--color-grey-light-4);
+
+  text-align: center;
+}

@@ -2,45 +2,16 @@
   height: 32.5rem; // ------------------------ Testing
   width: 100%;
 
-  background-image: radial-gradient(
-    var(--color-primary-light),
-    var(--color-primary-dark)
-  );
-
   // So that the header is stuck to the top while the rest of the page scrolls over it
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
 
   // So the rest of the page scrolls over the header
   z-index: -1;
-
-  &__logo-box {
-    @include absolute-center(50%, 50%);
-
-    background-image: radial-gradient(
-      var(--color-primary-light),
-      var(--color-primary-dark)
-    );
-    height: 37.5rem; // ------------------------ Testing
-    width: 37.5rem; // ------------------------ Testing
-    border-radius: 50%; // Circle shaped
-  }
-
-  &__text-box {
-    @include absolute-center(50%, 50%);
-    background-color: transparent;
-
-    & > * {
-      border-bottom: var(--line);
-    }
-  }
 }
 
 .content {
-  margin-top: 32.5rem; // ------------------------ Testing
   height: 60rem; // ------------------------ Testing
-  background-color: orangered;
+  background-color: var(--color-grey-dark-2);
 
   // For the navbar placement
   display: flex;

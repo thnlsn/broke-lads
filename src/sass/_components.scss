@@ -1,30 +1,25 @@
 .navigation {
-  background-color: blueviolet;
+  background-color: var(--color-grey-dark-1);
   flex: 0 0 7.5rem;
 }
 
-.heading-primary {
-  text-align: center;
-  text-transform: uppercase;
+.title {
+  &__logo-box {
+    // It is based on .header fixed position
+    @include absolute-center(50%, 50%);
 
-  &--main {
-    font-size: 10rem;
-    display: block;
-
-    @include text-stroke(
-      var(--color-grey-dark-1),
-      var(--color-grey-dark-3),
-      1px
+    background-image: radial-gradient(
+      var(--color-primary-light),
+      var(--color-primary-dark)
     );
+    height: 37.5rem; // ------------------------ Testing
+    width: 37.5rem; // ------------------------ Testing
+    border-radius: 50%; // Circle shaped
   }
 
-  &--sub {
-    font-size: 5rem;
-
-    @include text-stroke(
-      var(--color-grey-dark-1),
-      var(--color-grey-light-1),
-      1px
-    );
+  &__text-box {
+    // It is based on .header fixed position
+    @include absolute-center(50%, 50%);
+    background-color: transparent;
   }
 }
