@@ -23,8 +23,8 @@ function App() {
             </div>
           </div>
         </header>
+        <nav className='navigation'>Nav</nav>
         <main className='content'>
-          <nav className='navigation'>Nav</nav>
           <div className='heading-secondary'>Who are we?</div>
           <p className='paragraph'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
