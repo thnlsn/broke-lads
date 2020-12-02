@@ -15,7 +15,8 @@
   --color-grey-dark-4: #999;
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --line: 1px solid var(--color-grey-light-2); }
+  --line: 1px solid var(--color-grey-light-2);
+  --default-font: 2rem; }
 
 * {
   margin: 0;
@@ -46,21 +47,25 @@ body {
 .heading-primary {
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1.5rem;
-  color: var(--color-grey-light-4);
+  color: var(--color-grey-dark-1);
   text-align: center;
-  text-transform: uppercase;
-  color: var(--color-grey-light-2);
-  text-shadow: -1px -1px 0 var(--color-primary-light), 1px -1px 0 var(--color-primary-light), -1px 1px 0 var(--color-primary-light), 1px 1px 0 var(--color-primary-light); }
+  text-shadow: -1.5px -1.5px 0 var(--color-grey-light-1), 1.5px -1.5px 0 var(--color-grey-light-1), -1.5px 1.5px 0 var(--color-grey-light-1), 1.5px 1.5px 0 var(--color-grey-light-1); }
   .heading-primary--main {
     font-size: 8rem;
-    display: block; }
+    display: block;
+    text-transform: uppercase; }
   .heading-primary--sub {
     font-size: 3rem; }
 
 .heading-secondary {
   font-family: 'Overlock SC', cursive;
-  color: var(--color-grey-light-4);
+  color: var(--color-grey-light-3);
+  font-size: 5rem;
+  text-shadow: -1.5px -1.5px 0 var(--color-grey-dark-1), 1.5px -1.5px 0 var(--color-grey-dark-1), -1.5px 1.5px 0 var(--color-grey-dark-1), 1.5px 1.5px 0 var(--color-grey-dark-1);
   text-align: center; }
+
+.paragraph {
+  font-size: var(--default-font); }
 
 .header {
   height: 32.5rem;
@@ -69,10 +74,10 @@ body {
   z-index: -1; }
 
 .content {
-  height: 60rem;
   background-color: var(--color-grey-dark-2);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 4rem 55rem; }
 
 .footer {
   background-color: var(--color-grey-dark-1); }

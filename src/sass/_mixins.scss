@@ -12,8 +12,7 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin text-stroke($fill: #fff, $stroke: #000, $width: 1px) {
-  color: $fill;
+@mixin text-stroke($stroke: #000, $width: 1px) {
   // Sass variables must be used for changing a parameter value, such as using $width for negative values as well
   text-shadow: -#{$width} -#{$width} 0 $stroke, $width -#{$width} 0 $stroke,
     -#{$width} $width 0 $stroke, $width $width 0 $stroke;

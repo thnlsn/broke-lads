@@ -10,12 +10,13 @@
 }
 
 .content {
-  height: 60rem; // ------------------------ Testing
   background-color: var(--color-grey-dark-2);
 
   // For the navbar placement
   display: flex;
   flex-direction: column;
+
+  padding: 4rem 55rem;
 }
 
 .footer {
