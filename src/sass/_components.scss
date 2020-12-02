@@ -2,3 +2,29 @@
   background-color: blueviolet;
   flex: 0 0 7.5rem;
 }
+
+.heading-primary {
+  text-align: center;
+  text-transform: uppercase;
+
+  &--main {
+    font-size: 10rem;
+    display: block;
+
+    @include text-stroke(
+      var(--color-grey-dark-1),
+      var(--color-grey-light-1),
+      1px
+    );
+  }
+
+  &--sub {
+    font-size: 5rem;
+
+    @include text-stroke(
+      var(--color-grey-dark-1),
+      var(--color-grey-light-1),
+      1px
+    );
+  }
+}

@@ -74,6 +74,19 @@ body {
   background-color: blueviolet;
   flex: 0 0 7.5rem; }
 
+.heading-primary {
+  text-align: center;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    font-size: 10rem;
+    display: block;
+    color: var(--color-grey-dark-1);
+    text-shadow: -1px -1px 0 var(--color-grey-light-1), 1px -1px 0 var(--color-grey-light-1), -1px 1px 0 var(--color-grey-light-1), 1px 1px 0 var(--color-grey-light-1); }
+  .heading-primary--sub {
+    font-size: 5rem;
+    color: var(--color-grey-dark-1);
+    text-shadow: -1px -1px 0 var(--color-grey-light-1), 1px -1px 0 var(--color-grey-light-1), -1px 1px 0 var(--color-grey-light-1), 1px 1px 0 var(--color-grey-light-1); }
+
 /*
     COLORS
 
