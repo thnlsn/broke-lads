@@ -34,22 +34,28 @@ body {
   background-color: var(--color-primary); }
 
 .header {
-  height: 20rem;
+  height: 32.5rem;
+  width: 100%;
   background-color: yellowgreen;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.content {
+  margin-top: 32.5rem;
+  height: 60rem;
+  background-color: orangered;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-.content {
-  height: 80rem;
-  background-color: orangered; }
 
 .footer {
   background-color: dodgerblue; }
 
 .navigation {
   background-color: blueviolet;
-  flex: 0 0 20%; }
+  flex: 0 0 7.5rem; }
 
 /*
     COLORS

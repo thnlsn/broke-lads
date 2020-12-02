@@ -1,16 +1,24 @@
 .header {
-  height: 20rem; // ------------------------ Testing
+  height: 32.5rem; // ------------------------ Testing
+  width: 100%;
   background-color: yellowgreen; // ------------------------ Testing
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+.content {
+  margin-top: 32.5rem; // ------------------------ Testing
+  height: 60rem; // ------------------------ Testing
+  background-color: orangered;
 
   // For the navbar placement
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.content {
-  height: 80rem; // ------------------------ Testing
-  background-color: orangered;
 }
 
 .footer {
