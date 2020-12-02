@@ -12,12 +12,14 @@ function App() {
           <div className='header__logo-box'>
             <img src={headerLogo} alt='Logo' className='header__logo' />
           </div>
-          <h1 className='heading-primary'>
-            {/*             <span className='heading-primary--main'>Broke Lads</span>
-            <span className='heading-primary--sub'>
-              "Savages with empty pockets"
-            </span> */}
-          </h1>
+          <div className='header__text-box'>
+            <h1 className='heading-primary'>
+              <span className='heading-primary--main'>Broke Lads</span>
+              <span className='heading-primary--sub'>
+                "Savages with empty pockets"
+              </span>
+            </h1>
+          </div>
         </header>
         <main className='content'>
           <nav className='navigation'>Nav</nav>

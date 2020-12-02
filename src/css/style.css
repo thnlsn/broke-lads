@@ -54,6 +54,11 @@ body {
     height: 37.5rem;
     width: 37.5rem;
     border-radius: 50%; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .content {
   margin-top: 32.5rem;
