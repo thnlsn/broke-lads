@@ -124,21 +124,25 @@ body {
     justify-content: center;
     flex: 1;
     position: relative;
-    z-index: 100; }
+    z-index: 1;
+    transition: all 0.45s; }
     .navigation__tab-button:after {
       content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      z-index: 0;
-      transition: height 0.35s cubic-bezier(1, -0.02, 0, 1), background-color 0.2s ease;
-      height: 3px;
-      background-color: var(--color-grey-dark-1); }
+      z-index: -1;
+      transition: height 0.35s cubic-bezier(1, -0.02, 0, 1), background-color 0.35s cubic-bezier(1, -0.02, 0, 1);
+      height: 1px;
+      background-color: var(--color-grey-dark-2); }
   .navigation [type='radio'] {
     display: none; }
+    .navigation [type='radio']:checked ~ .navigation__tab-button {
+      padding-bottom: 1rem; }
     .navigation [type='radio']:checked ~ .navigation__tab-button:after {
-      height: 100%; }
+      height: 100%;
+      background-color: var(--color-grey-dark-1); }
 
 .title__logo-box {
   position: absolute;

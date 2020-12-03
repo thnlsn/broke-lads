@@ -22,7 +22,9 @@
     flex: 1; // Grow but also take up a third of the nav
     position: relative;
 
-    z-index: 100;
+    z-index: 1;
+
+    transition: all 0.45s;
 
     &:after {
       content: '';
@@ -31,13 +33,13 @@
       left: 0;
       width: 100%; // So that it spans the entire width of the tab-button
 
-      z-index: 0;
+      z-index: -1;
 
       // Initial animation state for tab buttons
       transition: height 0.35s cubic-bezier(1, -0.02, 0, 1),
-        background-color 0.2s ease;
-      height: 3px;
-      background-color: var(--color-grey-dark-1);
+        background-color 0.35s cubic-bezier(1, -0.02, 0, 1);
+      height: 1px;
+      background-color: var(--color-grey-dark-2);
     }
   }
 
@@ -45,11 +47,14 @@
     display: none;
 
     &:checked ~ .navigation__tab-button {
+      // Ending animation state for the text
+      padding-bottom: 1rem;
     }
 
     &:checked ~ .navigation__tab-button:after {
       // Ending animation state for tab buttons
       height: 100%;
+      background-color: var(--color-grey-dark-1);
     }
   }
 }
