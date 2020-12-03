@@ -10,17 +10,19 @@
 }
 
 .content {
-  background-color: var(--color-grey-dark-2t);
+  background-color: var(--color-grey-dark-1);
 
   // For the navbar placement
   display: flex;
   flex-direction: column;
 
-  padding: 4rem 55rem;
+  padding: 4rem 25% 5rem 25%;
+
+  border-top: var(--line);
 }
 
 .footer {
-  background-color: var(
-    --color-grey-dark-1
-  ); // ------------------------ Testing
+  background-color: var(--color-black);
+  height: 6rem;
+  box-shadow: var(--shadow-dark); // ------------------------ Testing
 }

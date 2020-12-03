@@ -1,7 +1,9 @@
 .navigation {
-  background-color: var(--color-grey-dark-1);
-  height: 6rem;
+  background-color: var(--color-black);
+  height: 8rem;
   box-shadow: var(--shadow-dark);
+
+  display: flex;
 }
 
 .title {

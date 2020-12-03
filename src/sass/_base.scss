@@ -19,12 +19,13 @@
   --color-grey-dark-3: #777;
   --color-grey-dark-4: #999;
 
-  --color-grey-dark-2t: rgba(3, 3, 3, 0.85);
+  --color-black: #111;
 
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 
   --line: 1px solid var(--color-grey-light-2);
+  --line: 1px solid var(--color-grey-dark-2);
 
   --default-font: 2.5rem;
 
@@ -51,7 +52,7 @@ body {
   min-height: 100vh;
 
   // Most basic level font, for all the paragraphs
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: normal;
   color: var(--color-grey-light-1);
