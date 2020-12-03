@@ -4,18 +4,19 @@
   box-shadow: var(--shadow-dark);
 
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  justify-content: center;
 
-  &__nav-item {
+  &__tab-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 33.3333333333%;
-    text-align: center;
-
+    flex: 1 0 33.3333333333%; // Grow but also take up a third of the nav
     font-family: 'Overlock SC', cursive;
     font-size: 4rem;
+  }
+
+  &__nav-radio {
+    display: none;
   }
 }
 
@@ -47,14 +48,4 @@
     @include absolute-center(50%, 50%);
     background-color: transparent;
   }
-}
-
-#overlay {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.2);
 }

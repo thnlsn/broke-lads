@@ -24,9 +24,36 @@ function App() {
           </div>
         </header>
         <nav className='navigation'>
-          <div className='navigation__nav-item'>Home</div>
-          <div className='navigation__nav-item'>Creator Pages</div>
-          <div className='navigation__nav-item'>Follow Us!</div>
+          <input
+            type='radio'
+            id='home-tab'
+            name='tab-nav'
+            value='home-tab'
+            className='navigation__nav-radio'
+          />
+          <label htmlFor='home-tab' className='navigation__tab-button'>
+            Home
+          </label>
+          <input
+            type='radio'
+            id='creator-tab'
+            name='tab-nav'
+            value='creator-tab'
+            className='navigation__nav-radio'
+          />
+          <label htmlFor='creator-tab' className='navigation__tab-button'>
+            Creators
+          </label>
+          <input
+            type='radio'
+            id='follow-tab'
+            name='tab-nav'
+            value='follow-tab'
+            className='navigation__nav-radio'
+          />
+          <label htmlFor='follow-tab' className='navigation__tab-button'>
+            Follow Us!
+          </label>
         </nav>
         <main className='content'>
           <div className='heading-secondary'>Who are we?</div>
@@ -58,7 +85,6 @@ function App() {
         </main>
         <footer className='footer'>Footer</footer>
       </Fragment>
-      <div id='overlay'></div>
     </div>
   );
 }

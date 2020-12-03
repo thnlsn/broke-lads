@@ -1,37 +1,3 @@
-// :root is the global parent element, similar to html, but with higher specificity
-:root {
-  // -- designated a custom property, which is inherited to all children, hence why we declared them in the :root
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba265d;
-
-  --color-secondary: #faa300;
-  --color-secondary-light: #ffbf00;
-  --color-secondary-dark: #4b2801;
-
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
-
-  --color-grey-dark-1: #222;
-  --color-grey-dark-2: #333;
-  --color-grey-dark-3: #777;
-  --color-grey-dark-4: #999;
-
-  --color-black: #111;
-
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-
-  --line: 1px solid var(--color-grey-light-2);
-  --line: 1px solid var(--color-grey-dark-2);
-
-  --default-font: 2.5rem;
-
-  --header-height: 32.5rem;
-} // -------------------------------------------------------------------------------------------------- Testing
-
 * {
   margin: 0;
   padding: 0;
