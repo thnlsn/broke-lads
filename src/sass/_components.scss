@@ -1,22 +1,56 @@
 .navigation {
   background-color: var(--color-black);
   height: 8rem;
-  box-shadow: var(--shadow-dark);
 
   display: flex;
   justify-content: center;
+
+  &__tab {
+    display: flex;
+    flex: 1 0 33.3333333333%; // Grow but also take up a third of the nav
+    font-family: 'Overlock SC', cursive;
+    font-size: 4rem;
+
+    z-index: 1;
+  }
 
   &__tab-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 0 33.3333333333%; // Grow but also take up a third of the nav
-    font-family: 'Overlock SC', cursive;
-    font-size: 4rem;
+
+    flex: 1; // Grow but also take up a third of the nav
+    position: relative;
+
+    z-index: 100;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%; // So that it spans the entire width of the tab-button
+
+      z-index: 0;
+
+      // Initial animation state for tab buttons
+      transition: height 0.35s cubic-bezier(1, -0.02, 0, 1),
+        background-color 0.2s ease;
+      height: 3px;
+      background-color: var(--color-grey-dark-1);
+    }
   }
 
-  &__nav-radio {
+  [type='radio'] {
     display: none;
+
+    &:checked ~ .navigation__tab-button {
+    }
+
+    &:checked ~ .navigation__tab-button:after {
+      // Ending animation state for tab buttons
+      height: 100%;
+    }
   }
 }
 

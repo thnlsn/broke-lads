@@ -23,37 +23,44 @@ function App() {
             </div>
           </div>
         </header>
-        <nav className='navigation'>
-          <input
-            type='radio'
-            id='home-tab'
-            name='tab-nav'
-            value='home-tab'
-            className='navigation__nav-radio'
-          />
-          <label htmlFor='home-tab' className='navigation__tab-button'>
-            Home
-          </label>
-          <input
-            type='radio'
-            id='creator-tab'
-            name='tab-nav'
-            value='creator-tab'
-            className='navigation__nav-radio'
-          />
-          <label htmlFor='creator-tab' className='navigation__tab-button'>
-            Creators
-          </label>
-          <input
-            type='radio'
-            id='follow-tab'
-            name='tab-nav'
-            value='follow-tab'
-            className='navigation__nav-radio'
-          />
-          <label htmlFor='follow-tab' className='navigation__tab-button'>
-            Follow Us!
-          </label>
+        <nav className='navigation u-neg-margin-bottom-tiny'>
+          <div className='navigation__tab'>
+            <input
+              type='radio'
+              id='home-tab'
+              name='tab-nav'
+              value='home-tab'
+              className='navigation__nav-radio'
+              defaultChecked // "defaultChecked" and not "checked," otherwise it will check this tab inbetween every attempt to check
+            />
+            <label htmlFor='home-tab' className='navigation__tab-button'>
+              Home
+            </label>
+          </div>
+          <div className='navigation__tab'>
+            <input
+              type='radio'
+              id='creator-tab'
+              name='tab-nav'
+              value='creator-tab'
+              className='navigation__nav-radio'
+            />
+            <label htmlFor='creator-tab' className='navigation__tab-button'>
+              Creators
+            </label>
+          </div>
+          <div className='navigation__tab'>
+            <input
+              type='radio'
+              id='follow-tab'
+              name='tab-nav'
+              value='follow-tab'
+              className='navigation__nav-radio'
+            />
+            <label htmlFor='follow-tab' className='navigation__tab-button'>
+              Follow Us!
+            </label>
+          </div>
         </nav>
         <main className='content'>
           <div className='heading-secondary'>Who are we?</div>
