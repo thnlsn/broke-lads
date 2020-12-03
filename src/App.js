@@ -23,34 +23,37 @@ function App() {
             </div>
           </div>
         </header>
-        <nav className='navigation'>Nav</nav>
+        <nav className='navigation'>
+          <div className='navigation__nav-item'>Home</div>
+          <div className='navigation__nav-item'>Creator Pages</div>
+          <div className='navigation__nav-item'>Follow Us!</div>
+        </nav>
         <main className='content'>
           <div className='heading-secondary'>Who are we?</div>
-          <p className='paragraph'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis tempora iusto modi asperiores praesentium in dolor
-            quibusdam veritatis, quasi dolorem vel, aspernatur, eligendi
-            deleniti odio. Quod rem accusantium quae amet molestiae odit
-            dignissimos! Corporis expedita non molestiae rem nobis? Impedit
-            error perferendis nobis, alias ad ab maiores a delectus vel aut
-            nostrum quis eligendi id dignissimos quod fugit debitis, dolores
-            labore vero eos aspernatur tempora. Veritatis architecto, optio
-            laborum accusantium consectetur placeat ducimus rerum quos at natus,
-            maiores, fugit magnam nesciunt est quia mollitia libero aliquam?
-            Libero temporibus vero voluptas nemo provident necessitatibus ullam
-            inventore ut officia quaerat adipisci modi iste, unde nulla
-            voluptates nihil! Repudiandae perferendis dignissimos quas, totam
-            nam incidunt voluptatibus magnam nobis itaque possimus veniam minima
-            amet vero nisi deleniti molestiae pariatur deserunt quidem! Porro
-            sit recusandae ipsam tenetur voluptate quae fuga quisquam fugit
-            ullam maiores sunt obcaecati tempore, dolorem error, necessitatibus
-            molestias nobis deserunt minima nisi optio! Quaerat quos fugit iste
-            in illo provident, laborum ipsam sed, blanditiis nihil sint
-            assumenda, fuga officia quidem porro dolorum sapiente! Nemo
-            dignissimos odit vitae fugiat sequi ut velit omnis. Atque deleniti
-            assumenda hic quasi accusantium ipsam dicta officiis esse ullam
-            magni ut repudiandae voluptatibus, accusamus cumque ipsa alias
-            reiciendis.
+          <p className='paragraph paragraph--lined'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            fuga rem eligendi ea iste, qui ut quis animi doloribus atque modi!
+            Porro vel rerum reprehenderit ratione, maiores ipsam voluptatum
+            temporibus, perferendis deleniti minima laborum voluptatibus rem
+            labore maxime quaerat iste molestiae, deserunt provident autem
+            optio? Quo, at! Vitae provident doloribus nesciunt placeat
+            perspiciatis fugit voluptatibus ea molestiae beatae animi sint quia
+            tempora aut, quas ipsum voluptate iusto inventore, corporis totam?
+            Qui mollitia praesentium explicabo tempore magnam velit accusamus.
+            Doloremque nam placeat ab ducimus sint odio incidunt! Quae, incidunt
+            id nisi maiores qui obcaecati inventore harum vero nobis doloremque
+            consectetur, et a expedita impedit sequi repellat totam ducimus
+            blanditiis praesentium, dolor dignissimos autem molestias?
+            Consectetur aut, eius facilis modi unde tenetur, molestiae eos
+            molestias mollitia amet error ut tempora. Error consequatur vitae ex
+            esse maxime odio facilis accusantium iste enim alias est fugiat,
+            perferendis expedita delectus porro eius assumenda laudantium sit
+            saepe quo nulla eum. Est dolorem eligendi numquam culpa earum nulla
+            beatae dolor vitae iure! Maiores, cumque corrupti. Laborum delectus
+            corporis suscipit at perspiciatis quod architecto eaque, temporibus
+            magnam non, dolorem tenetur facere maiores nam explicabo. Labore, at
+            mollitia dolor adipisci, cumque ipsam nulla praesentium provident
+            quaerat sint porro incidunt consequatur est quis quo quod!
           </p>
         </main>
         <footer className='footer'>Footer</footer>

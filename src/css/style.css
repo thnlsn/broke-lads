@@ -70,7 +70,13 @@ body {
 
 .paragraph {
   font-size: var(--default-font);
-  text-align: center; }
+  text-align: center;
+  line-height: 3.75rem; }
+  .paragraph--lined {
+    border-top: var(--line);
+    border-bottom: var(--line);
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
 
 .header {
   height: var(--header-height);
@@ -94,7 +100,17 @@ body {
   background-color: var(--color-black);
   height: 8rem;
   box-shadow: var(--shadow-dark);
-  display: flex; }
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between; }
+  .navigation__nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3333333333%;
+    text-align: center;
+    font-family: 'Overlock SC', cursive;
+    font-size: 4rem; }
 
 .title__logo-box {
   position: absolute;
