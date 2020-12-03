@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/broke-lads/static/css/main.9e312a2f.chunk.css",
+    "main.js": "/broke-lads/static/js/main.924e076c.chunk.js",
+    "main.js.map": "/broke-lads/static/js/main.924e076c.chunk.js.map",
+    "runtime-main.js": "/broke-lads/static/js/runtime-main.b4f12ae3.js",
+    "runtime-main.js.map": "/broke-lads/static/js/runtime-main.b4f12ae3.js.map",
+    "static/js/2.b40ccc0c.chunk.js": "/broke-lads/static/js/2.b40ccc0c.chunk.js",
+    "static/js/2.b40ccc0c.chunk.js.map": "/broke-lads/static/js/2.b40ccc0c.chunk.js.map",
+    "index.html": "/broke-lads/index.html",
+    "precache-manifest.cbd92aa9737ca0e5de2f870c8394ef1a.js": "/broke-lads/precache-manifest.cbd92aa9737ca0e5de2f870c8394ef1a.js",
+    "service-worker.js": "/broke-lads/service-worker.js",
+    "static/css/main.9e312a2f.chunk.css.map": "/broke-lads/static/css/main.9e312a2f.chunk.css.map",
+    "static/js/2.b40ccc0c.chunk.js.LICENSE.txt": "/broke-lads/static/js/2.b40ccc0c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4f12ae3.js",
+    "static/js/2.b40ccc0c.chunk.js",
+    "static/css/main.9e312a2f.chunk.css",
+    "static/js/main.924e076c.chunk.js"
+  ]
+}
