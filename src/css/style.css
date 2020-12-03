@@ -104,8 +104,13 @@ body {
 
 .footer {
   background-color: var(--color-black);
+  color: var(--color-grey-dark-4);
+  font-size: 1.4rem;
   height: 6rem;
-  box-shadow: var(--shadow-dark); }
+  box-shadow: var(--shadow-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .navigation {
   background-color: var(--color-black);
@@ -139,7 +144,7 @@ body {
   .navigation [type='radio'] {
     display: none; }
     .navigation [type='radio']:checked ~ .navigation__tab-button {
-      padding-bottom: 1rem; }
+      padding-bottom: 0.8rem; }
     .navigation [type='radio']:checked ~ .navigation__tab-button:after {
       height: 100%;
       background-color: var(--color-grey-dark-1); }

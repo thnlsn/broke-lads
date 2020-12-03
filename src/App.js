@@ -90,7 +90,9 @@ function App() {
             quaerat sint porro incidunt consequatur est quis quo quod!
           </p>
         </main>
-        <footer className='footer'>Footer</footer>
+        <footer className='footer'>
+          &copy; 2020 by Broke Lads. All rights reserved.
+        </footer>
       </Fragment>
     </div>
   );
