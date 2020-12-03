@@ -2,8 +2,8 @@
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
-  --color-secondary: #e79907;
-  --color-secondary-light: #f3b700;
+  --color-secondary: #faa300;
+  --color-secondary-light: #ffbf00;
   --color-secondary-dark: #4b2801;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -13,10 +13,12 @@
   --color-grey-dark-2: #333;
   --color-grey-dark-3: #777;
   --color-grey-dark-4: #999;
+  --color-grey-dark-2t: rgba(3, 3, 3, 0.85);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --line: 1px solid var(--color-grey-light-2);
-  --default-font: 2rem; }
+  --default-font: 2.5rem;
+  --header-height: 32.5rem; }
 
 * {
   margin: 0;
@@ -48,14 +50,15 @@ body {
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1.5rem;
   color: var(--color-grey-dark-1);
+  text-shadow: var(--shadow-dark);
   text-align: center;
   text-shadow: -1.5px -1.5px 0 var(--color-grey-light-1), 1.5px -1.5px 0 var(--color-grey-light-1), -1.5px 1.5px 0 var(--color-grey-light-1), 1.5px 1.5px 0 var(--color-grey-light-1); }
   .heading-primary--main {
-    font-size: 8rem;
+    font-size: 10rem;
     display: block;
     text-transform: uppercase; }
   .heading-primary--sub {
-    font-size: 3rem; }
+    font-size: 4rem; }
 
 .heading-secondary {
   font-family: 'Overlock SC', cursive;
@@ -65,16 +68,18 @@ body {
   text-align: center; }
 
 .paragraph {
-  font-size: var(--default-font); }
+  font-family: 'EB Garamond', serif;
+  font-size: var(--default-font);
+  text-align: center; }
 
 .header {
-  height: 32.5rem;
+  height: var(--header-height);
   width: 100%;
   position: relative;
   z-index: -1; }
 
 .content {
-  background-color: var(--color-grey-dark-2);
+  background-color: var(--color-grey-dark-2t);
   display: flex;
   flex-direction: column;
   padding: 4rem 55rem; }
@@ -84,7 +89,8 @@ body {
 
 .navigation {
   background-color: var(--color-grey-dark-1);
-  flex: 0 0 7.5rem; }
+  height: 6rem;
+  box-shadow: var(--shadow-dark); }
 
 .title__logo-box {
   position: absolute;
@@ -92,11 +98,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-image: radial-gradient(var(--color-primary-light), var(--color-primary-dark));
-  height: 37.5rem;
-  width: 37.5rem;
-  border-radius: 50%; }
+  height: calc( var(--header-height) + (0.133333333333 * var(--header-height)));
+  width: calc( var(--header-height) + (0.133333333333 * var(--header-height)));
+  border-radius: 50%;
+  box-shadow: var(--shadow-dark); }
 
 .title__text-box {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;

@@ -1,5 +1,5 @@
 .header {
-  height: 32.5rem; // ------------------------ Testing
+  height: var(--header-height); // ------------------------ Testing
   width: 100%;
 
   // So that the header is stuck to the top while the rest of the page scrolls over it
@@ -10,7 +10,7 @@
 }
 
 .content {
-  background-color: var(--color-grey-dark-2);
+  background-color: var(--color-grey-dark-2t);
 
   // For the navbar placement
   display: flex;

@@ -1,22 +1,25 @@
+// Nothing here should affect anything other than the normal font properties
+
 .heading-primary {
   // Main heading font (might become an image later on)
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1.5rem;
   color: var(--color-grey-dark-1);
+  text-shadow: var(--shadow-dark);
 
   text-align: center;
 
   @include text-stroke(var(--color-grey-light-1), 1.5px);
 
   &--main {
-    font-size: 8rem;
+    font-size: 10rem;
     display: block; // So that the main and sub text appear on top of one another
 
     text-transform: uppercase;
   }
 
   &--sub {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -32,5 +35,7 @@
 }
 
 .paragraph {
+  font-family: 'EB Garamond', serif;
   font-size: var(--default-font);
+  text-align: center;
 }
