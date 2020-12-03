@@ -1,0 +1,182 @@
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+  --color-secondary: #faa300;
+  --color-secondary-light: #ffbf00;
+  --color-secondary-dark: #4b2801;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #222;
+  --color-grey-dark-2: #333;
+  --color-grey-dark-3: #777;
+  --color-grey-dark-4: #999;
+  --color-black: #111;
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --line: 1px solid var(--color-grey-light-2);
+  --line: 1px solid var(--color-grey-dark-2);
+  --default-font: 2.5rem;
+  --header-height: 32.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-grey-light-1);
+  background: radial-gradient(
+    var(--color-grey-light-1),
+    var(--color-secondary-light),
+    var(--color-secondary),
+    var(--color-secondary-dark)
+  );
+  background-attachment: fixed;
+}
+
+::selection {
+  color: var(--color-grey-light-1);
+  background-color: var(--color-primary);
+}
+
+.heading-primary {
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 1.5rem;
+  color: var(--color-grey-dark-1);
+  text-shadow: var(--shadow-dark);
+  text-align: center;
+  text-shadow: -1.5px -1.5px 0 var(--color-grey-light-1),
+    1.5px -1.5px 0 var(--color-grey-light-1),
+    -1.5px 1.5px 0 var(--color-grey-light-1),
+    1.5px 1.5px 0 var(--color-grey-light-1);
+}
+.heading-primary--main {
+  font-size: 10rem;
+  display: block;
+  text-transform: uppercase;
+}
+.heading-primary--sub {
+  font-size: 4rem;
+}
+
+.heading-secondary {
+  font-family: 'Overlock SC', cursive;
+  color: var(--color-grey-light-3);
+  font-size: 5rem;
+  text-shadow: -1.5px -1.5px 0 var(--color-grey-dark-1),
+    1.5px -1.5px 0 var(--color-grey-dark-1),
+    -1.5px 1.5px 0 var(--color-grey-dark-1),
+    1.5px 1.5px 0 var(--color-grey-dark-1);
+  text-align: center;
+}
+
+.paragraph {
+  font-size: var(--default-font);
+  text-align: center;
+  line-height: 3.75rem;
+}
+.paragraph--lined {
+  border-top: var(--line);
+  border-bottom: var(--line);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header {
+  height: var(--header-height);
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.content {
+  background-color: var(--color-grey-dark-1);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 25% 5rem 25%;
+  border-top: var(--line);
+}
+
+.footer {
+  background-color: var(--color-black);
+  height: 6rem;
+  box-shadow: var(--shadow-dark);
+}
+
+.navigation {
+  background-color: var(--color-black);
+  height: 8rem;
+  box-shadow: var(--shadow-dark);
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.navigation__nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.3333333333%;
+  text-align: center;
+  font-family: 'Overlock SC', cursive;
+  font-size: 4rem;
+}
+
+.title__logo-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  height: calc(var(--header-height) + (0.133333333333 * var(--header-height)));
+  width: calc(var(--header-height) + (0.133333333333 * var(--header-height)));
+  border-radius: 50%;
+  box-shadow: var(--shadow-dark);
+}
+
+.title__text-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+/*
+    COLORS
+
+    Primary: #eb2f64
+    Primary light: #FF3366
+    Primary dark: #BA265D
+
+    Grey light 1: #faf9f9
+    Grey light 2: #f4f2f2
+    Grey light 3: #f0eeee
+    Grey light 4: #ccc
+
+    Grey dark 1: #333
+    Grey dark 2: #777
+    Grey dark 3: #999
+ */

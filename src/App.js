@@ -58,6 +58,7 @@ function App() {
         </main>
         <footer className='footer'>Footer</footer>
       </Fragment>
+      <div id='overlay'></div>
     </div>
   );
 }
