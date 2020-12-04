@@ -40,10 +40,11 @@
   line-height: 3.75rem;
 
   &--lined {
-    border-top: var(--line);
-    border-bottom: var(--line);
+    border-top: var(--line-secondary);
+    border-bottom: var(--line-secondary);
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 0.75rem;
+    padding: 1rem 4rem;
   }
 }

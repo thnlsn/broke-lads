@@ -24,8 +24,8 @@
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 
-  --line: 1px solid var(--color-grey-light-2);
-  --line: 1px solid var(--color-grey-dark-2);
+  --line-thick-grey: 6px solid var(--color-grey-dark-2);
+  --line-secondary: 3px solid var(--color-secondary);
 
   --default-font: 2.5rem;
 
