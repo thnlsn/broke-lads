@@ -4,16 +4,17 @@
   --color-primary-dark: #ba265d;
   --color-secondary: #faa300;
   --color-secondary-light: #ffbf00;
-  --color-secondary-dark: #4b2801;
+  --color-secondary-dark: #201100;
   --color-grey-light-1: #f9f9fa;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
-  --color-grey-dark-1: #222;
-  --color-grey-dark-2: #333;
-  --color-grey-dark-3: #777;
-  --color-grey-dark-4: #999;
-  --color-black: #111;
+  --color-grey-dark-1: #111;
+  --color-grey-dark-2: #222;
+  --color-grey-dark-3: #333;
+  --color-grey-dark-4: #777;
+  --color-grey-dark-5: #999;
+  --color-black: #000;
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --line-thick-grey: 6px solid var(--color-grey-dark-2);
@@ -101,11 +102,9 @@ body {
     padding: 1.75rem 4.5rem; }
 
 .emphasis {
-  display: inline-block;
   color: var(--color-secondary);
   font-size: 1.2em;
   line-height: 0.8em;
-  transform: rotate(5deg);
   text-shadow: -1.5px -1.5px 0 var(--color-secondary-dark), 1.5px -1.5px 0 var(--color-secondary-dark), -1.5px 1.5px 0 var(--color-secondary-dark), 1.5px 1.5px 0 var(--color-secondary-dark); }
 
 .header {
@@ -122,14 +121,24 @@ body {
   padding: 3.5rem 25%; }
 
 .footer {
-  background-color: var(--color-black);
-  color: var(--color-grey-dark-4);
-  font-size: 1.4rem;
-  padding: 3rem 0;
-  box-shadow: var(--shadow-dark);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  position: relative; }
+  .footer__copyright {
+    background-color: #000;
+    color: var(--color-grey-dark-4);
+    font-size: 1.4rem;
+    padding: 3rem 0;
+    box-shadow: var(--shadow-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer__skyline {
+    margin-top: 3rem;
+    margin-bottom: -5px; }
+
+.quotes {
+  color: var(--color-black);
+  font-family: 'Overlock SC', cursive;
+  font-size: 5rem; }
 
 .navigation {
   background-color: var(--color-black);
@@ -142,7 +151,7 @@ body {
     z-index: 1;
     font-family: 'Overlock SC', cursive;
     font-size: 4rem;
-    text-shadow: -3px -3px 0 var(--color-secondary-dark), 3px -3px 0 var(--color-secondary-dark), -3px 3px 0 var(--color-secondary-dark), 3px 3px 0 var(--color-secondary-dark); }
+    text-shadow: -0.5px -0.5px 0 var(--color-secondary), 0.5px -0.5px 0 var(--color-secondary), -0.5px 0.5px 0 var(--color-secondary), 0.5px 0.5px 0 var(--color-secondary); }
   .navigation__tab-button {
     display: flex;
     align-items: center;

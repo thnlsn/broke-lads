@@ -48,12 +48,10 @@
 }
 
 .emphasis {
-  display: inline-block;
   color: var(--color-secondary);
   font-size: 1.2em; // Em is based off the parent, so making 20% larger
   line-height: 0.8em; // Em is based off the parent, so making 20% smaller
 
   // Not sure if I'll keep this...
-  transform: rotate(5deg);
   @include text-stroke(var(--color-secondary-dark), 1.5px);
 }

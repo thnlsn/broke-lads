@@ -26,14 +26,29 @@
 }
 
 .footer {
-  background-color: var(--color-black);
-  color: var(--color-grey-dark-4);
-  font-size: 1.4rem;
+  position: relative;
 
-  padding: 3rem 0;
-  box-shadow: var(--shadow-dark); // ------------------------ Testing
+  &__copyright {
+    background-color: #000;
+    color: var(--color-grey-dark-4);
+    font-size: 1.4rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 3rem 0;
+    box-shadow: var(--shadow-dark); // ------------------------ Testing
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__skyline {
+    margin-top: 3rem;
+    margin-bottom: -5px;
+  }
+}
+
+.quotes {
+  color: var(--color-black);
+  font-family: 'Overlock SC', cursive;
+  font-size: 5rem;
 }

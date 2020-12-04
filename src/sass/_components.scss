@@ -14,7 +14,7 @@
 
     font-family: 'Overlock SC', cursive;
     font-size: 4rem;
-    @include text-stroke(var(--color-secondary-dark), 3px);
+    @include text-stroke(var(--color-secondary), 0.5px);
   }
 
   &__tab-button {
