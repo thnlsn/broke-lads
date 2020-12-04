@@ -60,6 +60,15 @@ body {
 .u-neg-margin-bottom-tiny {
   margin-bottom: -1px; }
 
+.u-margin-bottom-small {
+  margin-bottom: 1rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-large {
+  margin-bottom: 4rem; }
+
 .heading-primary {
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1.5rem;
@@ -80,13 +89,6 @@ body {
   font-size: 5rem;
   text-shadow: -1.5px -1.5px 0 var(--color-grey-dark-1), 1.5px -1.5px 0 var(--color-grey-dark-1), -1.5px 1.5px 0 var(--color-grey-dark-1), 1.5px 1.5px 0 var(--color-grey-dark-1);
   text-align: center; }
-  .heading-secondary .emphasis {
-    display: inline-block;
-    color: var(--color-secondary);
-    font-size: 1.2em;
-    line-height: 0.8em;
-    transform: rotate(5deg);
-    text-shadow: -1.5px -1.5px 0 var(--color-secondary-dark), 1.5px -1.5px 0 var(--color-secondary-dark), -1.5px 1.5px 0 var(--color-secondary-dark), 1.5px 1.5px 0 var(--color-secondary-dark); }
 
 .paragraph {
   font-size: var(--default-font);
@@ -97,13 +99,14 @@ body {
     border-top: var(--line-secondary);
     border-bottom: var(--line-secondary);
     padding: 1.75rem 4.5rem; }
-  .paragraph .emphasis {
-    display: inline-block;
-    font-size: 1.2em;
-    line-height: 0.8em;
-    color: var(--color-secondary);
-    transform: rotate(5deg);
-    text-shadow: -1.5px -1.5px 0 var(--color-secondary-dark), 1.5px -1.5px 0 var(--color-secondary-dark), -1.5px 1.5px 0 var(--color-secondary-dark), 1.5px 1.5px 0 var(--color-secondary-dark); }
+
+.emphasis {
+  display: inline-block;
+  color: var(--color-secondary);
+  font-size: 1.2em;
+  line-height: 0.8em;
+  transform: rotate(5deg);
+  text-shadow: -1.5px -1.5px 0 var(--color-secondary-dark), 1.5px -1.5px 0 var(--color-secondary-dark), -1.5px 1.5px 0 var(--color-secondary-dark), 1.5px 1.5px 0 var(--color-secondary-dark); }
 
 .header {
   height: var(--header-height);

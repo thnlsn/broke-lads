@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import './css/style.css';
 
+import githubSVG from './images/logo-github.svg';
+
 // Logo image for the header
 const headerLogo = '';
 
@@ -63,7 +65,7 @@ function App() {
           </div>
         </nav>
         <main className='content'>
-          <div className='heading-secondary'>
+          <div className='heading-secondary u-margin-bottom-medium'>
             Who are we <span className='emphasis'>?</span>
           </div>
           <p className='paragraph paragraph--lined'>
@@ -94,6 +96,7 @@ function App() {
         </main>
         <footer className='footer'>
           &copy; 2020 by Broke Lads. All rights reserved.
+          <ion-icon name='logo-github'></ion-icon>
         </footer>
       </Fragment>
     </div>

@@ -32,17 +32,6 @@
   @include text-stroke(var(--color-grey-dark-1), 1.5px);
 
   text-align: center;
-
-  .emphasis {
-    display: inline-block;
-    color: var(--color-secondary);
-    font-size: 1.2em; // Em is based off the parent, so making 20% larger
-    line-height: 0.8em; // Em is based off the parent, so making 20% smaller
-
-    // Not sure if I'll keep this...
-    transform: rotate(5deg);
-    @include text-stroke(var(--color-secondary-dark), 1.5px);
-  }
 }
 
 .paragraph {
@@ -56,15 +45,15 @@
     border-bottom: var(--line-secondary);
     padding: 1.75rem 4.5rem;
   }
+}
 
-  .emphasis {
-    display: inline-block;
-    font-size: 1.2em; // Em is based off the parent, so making 20% larger
-    line-height: 0.8em; // Em is based off the parent, so making 20% smaller
-    color: var(--color-secondary);
+.emphasis {
+  display: inline-block;
+  color: var(--color-secondary);
+  font-size: 1.2em; // Em is based off the parent, so making 20% larger
+  line-height: 0.8em; // Em is based off the parent, so making 20% smaller
 
-    // Not sure if I'll keep this...
-    transform: rotate(5deg);
-    @include text-stroke(var(--color-secondary-dark), 1.5px);
-  }
+  // Not sure if I'll keep this...
+  transform: rotate(5deg);
+  @include text-stroke(var(--color-secondary-dark), 1.5px);
 }
