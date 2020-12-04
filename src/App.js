@@ -23,7 +23,7 @@ function App() {
             </div>
           </div>
         </header>
-        <nav className='navigation u-neg-margin-bottom-tiny'>
+        <nav className='navigation u-neg-margin-bottom-tiny nav-text'>
           <div className='navigation__tab'>
             <input
               type='radio'
@@ -63,7 +63,9 @@ function App() {
           </div>
         </nav>
         <main className='content'>
-          <div className='heading-secondary'>Who are we?</div>
+          <div className='heading-secondary'>
+            Who are we <span className='emphasis'>?</span>
+          </div>
           <p className='paragraph paragraph--lined'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             fuga rem eligendi ea iste, qui ut quis animi doloribus atque modi!
@@ -99,3 +101,11 @@ function App() {
 }
 
 export default App;
+
+/* 
+
+// Notes of things I've learned while coding this page
+
+Use em as a more responsive and future proof way of increasing or decreasing sizes for things that are dependant on the parent, like subtitles or emphasis classes on fonts
+
+*/

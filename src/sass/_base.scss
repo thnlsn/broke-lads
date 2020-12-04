@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
 
   // Most basic level font, for all the paragraphs
-  font-family: 'Lato', sans-serif;
+  font-family: 'Patrick Hand', cursive;
   font-weight: 400;
   line-height: normal;
   color: var(--color-grey-light-1);
@@ -34,6 +34,8 @@ body {
 }
 
 ::selection {
-  color: var(--color-grey-light-1); // ------------------------ Testing
-  background-color: var(--color-primary); // ------------------------ Testing
+  color: var(--color-secondary-dark); // ------------------------ Testing
+  background-color: var(
+    --color-secondary-light
+  ); // ------------------------ Testing
 }

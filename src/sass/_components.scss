@@ -1,3 +1,4 @@
+// NAVIGATION BAR
 .navigation {
   background-color: var(--color-black);
   height: 8rem;
@@ -8,10 +9,12 @@
   &__tab {
     display: flex;
     flex: 1 0 33.3333333333%; // Grow but also take up a third of the nav
-    font-family: 'Overlock SC', cursive;
-    font-size: 4rem;
 
     z-index: 1;
+
+    font-family: 'Overlock SC', cursive;
+    font-size: 4rem;
+    @include text-stroke(var(--color-secondary-dark), 3px);
   }
 
   &__tab-button {
@@ -52,6 +55,7 @@
     &:checked ~ .navigation__tab-button {
       // Ending animation state for the text
       padding-bottom: 0.8rem;
+      @include text-stroke(var(--color-secondary-dark), 5px);
     }
 
     &:checked ~ .navigation__tab-button:after {
