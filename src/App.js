@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import './css/style.css';
 
 // SVGs
@@ -26,7 +26,7 @@ function App() {
             </div>
           </div>
         </header>
-        <nav className='navigation nav-text'>
+        <nav className='navigation nav-text u-neg-margin-bottom-tiny'>
           <div className='navigation__tab'>
             <input
               type='radio'
@@ -36,7 +36,10 @@ function App() {
               className='navigation__nav-radio'
               defaultChecked // "defaultChecked" and not "checked," otherwise it will check this tab inbetween every attempt to check
             />
-            <label htmlFor='home-tab' className='navigation__tab-button'>
+            <label
+              htmlFor='home-tab'
+              className='navigation__tab-button u-unselectable'
+            >
               Home
             </label>
           </div>
@@ -48,7 +51,10 @@ function App() {
               value='creator-tab'
               className='navigation__nav-radio'
             />
-            <label htmlFor='creator-tab' className='navigation__tab-button'>
+            <label
+              htmlFor='creator-tab'
+              className='navigation__tab-button u-unselectable'
+            >
               Creators
             </label>
           </div>
@@ -60,7 +66,10 @@ function App() {
               value='follow-tab'
               className='navigation__nav-radio'
             />
-            <label htmlFor='follow-tab' className='navigation__tab-button'>
+            <label
+              htmlFor='follow-tab'
+              className='navigation__tab-button u-unselectable'
+            >
               Follow Us!
             </label>
           </div>
@@ -72,9 +81,7 @@ function App() {
           <p className='paragraph paragraph--lined'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             fuga rem eligendi ea iste, qui ut quis animi doloribus atque modi!
-            Porro vel rerum reprehenderit ratione, maiores ipsam voluptatum
-            temporibus, perferendis deleniti minima laborum voluptatibus rem
-            labore maxime quaerat iste molestiae, deserunt provident autem
+            Porro vel rerum reprehenderit ratione, deserunt provident autem
             optio? Quo, at! Vitae provident doloribus nesciunt placeat
             perspiciatis fugit voluptatibus ea molestiae beatae animi sint quia
             <span className='emphasis'> tempora </span> aut, quas ipsum
@@ -88,11 +95,9 @@ function App() {
             accusantium iste enim alias est fugiat, perferendis expedita
             delectus porro eius assumenda laudantium sit saepe quo nulla eum.
             Est dolorem eligendi numquam culpa earum nulla beatae dolor vitae
-            iure! Maiores, cumque corrupti. Laborum delectus corporis suscipit
-            at perspiciatis quod architecto eaque, temporibus magnam non,
-            dolorem tenetur facere maiores nam explicabo. Labore, at mollitia
-            dolor adipisci, cumque ipsam nulla praesentium provident quaerat
-            sint porro incidunt consequatur est quis quo quod!
+            iure! Maiores, cumque corrupti. Labore, at mollitia dolor adipisci,
+            cumque ipsam nulla praesentium provident quaerat sint porro incidunt
+            consequatur est quis quo quod!
           </p>
         </main>
         <div className='quotes'>
@@ -125,6 +130,17 @@ export default App;
 
 // Notes of things I've learned while coding this page
 
+// Notes
 Use em as a more responsive and future proof way of increasing or decreasing sizes for things that are dependant on the parent, like subtitles or emphasis classes on fonts
+
+// Make Notecards
+* in JavaScript or React
+Why not use ++ or -- on a state value? Even if it's inside setState();
+Declare
+promise
+async await
+non-zero index
+eslint error on the empty array of useEffect
+Destructuring
 
 */

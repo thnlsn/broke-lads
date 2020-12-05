@@ -1,6 +1,10 @@
 // NAVIGATION BAR
 .navigation {
-  background-color: var(--color-black);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-black),
+    var(--color-secondary-dark)
+  );
   height: 8rem;
 
   display: flex;
