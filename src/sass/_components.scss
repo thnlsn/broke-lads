@@ -50,6 +50,8 @@
       height: 6px;
       background-color: var(--color-grey-dark-2);
       border-top: 6px solid var(--color-grey-dark-2);
+      border-left: 1px solid var(--color-grey-dark-2);
+      border-right: 1px solid var(--color-grey-dark-2);
     }
   }
 
@@ -83,6 +85,7 @@
       var(--color-primary-dark)
     );
 
+    // This is so that the height and width are always the same and scaled to whatever the --header-height is, and will have a small percentage of it clipped outside of the header itself
     height: calc(
       var(--header-height) + (0.133333333333 * var(--header-height))
     ); // ------------------------ Testing
