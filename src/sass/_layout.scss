@@ -48,7 +48,8 @@
 }
 
 .quotes {
-  color: var(--color-black);
-  font-family: 'Overlock SC', cursive;
-  font-size: 5rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }

@@ -55,6 +55,7 @@
     &:checked ~ .navigation__tab-button {
       // Ending animation state for the text
       padding-bottom: 0.8rem;
+      font-size: 1.1em;
       @include text-stroke(var(--color-secondary-dark), 5px);
     }
 
@@ -96,4 +97,11 @@
     @include absolute-center(50%, 50%);
     background-color: transparent;
   }
+}
+
+// QUOTE
+.quote {
+  color: var(--color-black);
+  font-family: 'Overlock SC', cursive;
+  font-size: 5rem;
 }

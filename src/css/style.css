@@ -94,7 +94,8 @@ body {
 .paragraph {
   font-size: var(--default-font);
   text-align: center;
-  line-height: 3.75rem; }
+  line-height: 3.75rem;
+  letter-spacing: 0.3rem; }
   .paragraph--lined {
     border-radius: 5%;
     border-top: var(--line-secondary);
@@ -136,9 +137,10 @@ body {
     margin-bottom: -5px; }
 
 .quotes {
-  color: var(--color-black);
-  font-family: 'Overlock SC', cursive;
-  font-size: 5rem; }
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
 
 .navigation {
   background-color: var(--color-black);
@@ -175,6 +177,7 @@ body {
     display: none; }
     .navigation [type='radio']:checked ~ .navigation__tab-button {
       padding-bottom: 0.8rem;
+      font-size: 1.1em;
       text-shadow: -5px -5px 0 var(--color-secondary-dark), 5px -5px 0 var(--color-secondary-dark), -5px 5px 0 var(--color-secondary-dark), 5px 5px 0 var(--color-secondary-dark); }
     .navigation [type='radio']:checked ~ .navigation__tab-button:after {
       height: 100%;
@@ -199,6 +202,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent; }
+
+.quote {
+  color: var(--color-black);
+  font-family: 'Overlock SC', cursive;
+  font-size: 5rem; }
 
 /*
     COLORS

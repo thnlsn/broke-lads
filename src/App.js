@@ -97,6 +97,8 @@ function App() {
         </main>
         <div className='quotes'>
           <div className='quote'>"These dudes are hilarous!" - Joe Smith</div>
+          <div className='quote'>"These dudes are hilarous!" - Joe Smith</div>
+          <div className='quote'>"These dudes are hilarous!" - Joe Smith</div>
         </div>
         <footer className='footer'>
           <img
