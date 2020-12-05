@@ -96,9 +96,13 @@ function App() {
           </p>
         </main>
         <div className='quotes'>
-          <div className='quote'>"These dudes are hilarous!" - Joe Smith</div>
-          <div className='quote'>"These dudes are hilarous!" - Joe Smith</div>
-          <div className='quote'>"These dudes are hilarous!" - Joe Smith</div>
+          <div className='quote'>"These dudes are hilarous!" - Clark Kent</div>
+          <div className='quote'>
+            "Their work just feels so genuine." - Bruce Wayne
+          </div>
+          <div className='quote'>
+            "I love the variety of humour." - Diana Prince
+          </div>
         </div>
         <footer className='footer'>
           <img
