@@ -115,7 +115,7 @@
   }
 
   &__logo {
-    fill: royalblue;
+    fill: royalblue; // TESTING TESTING TESTING
   }
 }
 
@@ -143,7 +143,7 @@
   &__container {
     background-image: linear-gradient(var(--color-secondary-dark), transparent);
     display: inline-block;
-    flex: 0 0 45%;
-    margin: 1rem;
+    flex: 0 0 40%;
+    margin: 3rem 0;
   }
 }

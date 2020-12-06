@@ -13,6 +13,7 @@ import Socials from './components/viewComponents/Socials';
 
 // SVGs
 import skyline from './images/skyline.svg';
+import github from './images/logo-github.svg';
 
 // Logo image for the header
 import headerLogo from './images/main-logo.svg';
@@ -58,7 +59,7 @@ function App() {
             person={'Some very important person, probably'}
           />
           <Quote
-            quote={'"They are the best artists and writers in the world!"'}
+            quote={'"How can you not love these guys?"'}
             person={'One of our moms'}
           />
           <Quote
