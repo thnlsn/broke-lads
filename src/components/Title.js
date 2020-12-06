@@ -4,7 +4,7 @@ const Title = ({ logo, title, subtitle }) => {
   return (
     <Fragment>
       <div className='title__logo-box'>
-        <img src={logo} alt='Logo' className='header__logo' />
+        {/* <img src={logo} alt='Logo' className='title__logo' /> */}
       </div>
       <div className='title__text-box'>
         <h1 className='heading-primary'>

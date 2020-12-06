@@ -10,10 +10,10 @@ import Quote from './components/Quote';
 import Home from './components/viewComponents/About';
 
 // SVGs
-import Skyline from './images/skyline.svg';
+import skyline from './images/skyline.svg';
 
 // Logo image for the header
-const headerLogo = '';
+import headerLogo from './images/main-logo.svg';
 
 function App() {
   return (
@@ -21,9 +21,9 @@ function App() {
       <Fragment>
         <header className='header'>
           <Title
-            logo={headerLogo}
+            logo={'headerLogo'}
             title={'Broke Lads'}
-            subtitle={'Savages with empty pockets'}
+            subtitle={'"Savages with empty pockets"'}
           />
         </header>
         <Navigation />
@@ -35,16 +35,10 @@ function App() {
           <Quote quote={'"Their work just feels so genuine." - Bruce Wayne'} />
           <Quote quote={'"I love the variety of humour." - Diana Prince'} />
         </div>
-        <footer className='footer'>
-          <img
-            className='footer__skyline'
-            src={Skyline}
-            alt='Skyline Footer Art'
-          />
-          <div className='footer__copyright'>
-            &copy; 2020 by Broke Lads. All rights reserved.
-          </div>
-        </footer>
+        <Footer
+          silhouette={skyline}
+          copyright={'2020 by Broke Lads. All rights reserved.'}
+        />
       </Fragment>
     </div>
   );

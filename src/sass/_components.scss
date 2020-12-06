@@ -113,6 +113,10 @@
     @include absolute-center(50%, 50%);
     background-color: transparent;
   }
+
+  &__logo {
+    fill: royalblue;
+  }
 }
 
 // QUOTE

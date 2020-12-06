@@ -23,7 +23,7 @@
   --line-secondary: 3px solid var(--color-secondary);
   --default-font: 2.5rem;
   --secondary-header-font: 5rem;
-  --header-height: 100vh; }
+  --header-height: 32.5rem; }
 
 * {
   margin: 0;
@@ -51,6 +51,12 @@ body {
   color: var(--color-grey-light-1);
   background-color: var(--color-secondary-light);
   text-shadow: none; }
+
+@keyframes headerShrink {
+  0% {
+    height: 100vh; }
+  100% {
+    height: var(--header-height); } }
 
 .u-overlay {
   position: fixed;
@@ -130,7 +136,7 @@ body {
   width: 100%;
   position: relative;
   z-index: -1;
-  transition: 1s height; }
+  animation: 1s cubic-bezier(1, 0.01, 0.4, 1.28) 0s 1 headerShrink; }
 
 .content {
   background-color: var(--color-grey-dark-1);
@@ -225,6 +231,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent; }
+
+.title__logo {
+  fill: royalblue; }
 
 .quote {
   color: var(--color-black);
