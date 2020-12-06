@@ -124,5 +124,11 @@
   color: var(--color-black);
   font-family: 'Overlock SC', cursive;
   font-size: 5rem;
+  letter-spacing: 0.001rem;
   justify-self: center;
+  margin: 0.75rem 0;
+
+  &--person {
+    font-size: 2.5rem;
+  }
 }

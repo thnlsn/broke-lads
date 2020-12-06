@@ -16,6 +16,22 @@ import skyline from './images/skyline.svg';
 import headerLogo from './images/main-logo.svg';
 
 function App() {
+  const [tabState, setTabState] = useState('home-tab');
+
+  const changeTab = (event) => {
+    // Passing in the value of the value attribute attached to the radio input element of the tab
+    setTabState(event.target.value);
+  };
+
+  const renderTab = () => {
+    // Depending on what tabState currently is, display the corresponding component
+    switch (tabState) {
+      case 'home-tab':
+      case 'creator-tab':
+      case 'follow-tab':
+    }
+  };
+
   return (
     <div className='App'>
       <Fragment>
@@ -31,9 +47,21 @@ function App() {
           <Home />
         </main>
         <div className='quotes'>
-          <Quote quote={'"These dudes are hilarous!" - Clark Kent'} />
+          {/*           <Quote quote={'"These dudes are HILARIOUS!" - Clark Kent'} />
           <Quote quote={'"Their work just feels so genuine." - Bruce Wayne'} />
-          <Quote quote={'"I love the variety of humour." - Diana Prince'} />
+          <Quote quote={'"I love their variety of humour" - Diana Prince'} /> */}
+          <Quote
+            quote={'"Eisner award worthy - truly something to behold."'}
+            person={'Some very important person, probably'}
+          />
+          <Quote
+            quote={'"They are the best artists and writers in the world!"'}
+            person={'One of our moms'}
+          />
+          <Quote
+            quote={'"Everything they put out is peak entertainment."'}
+            person={'Someone that "DEFINITELY" exists'}
+          />
         </div>
         <Footer
           silhouette={skyline}

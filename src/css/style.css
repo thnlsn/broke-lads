@@ -5,6 +5,9 @@
   --color-secondary: #faa300;
   --color-secondary-light: #ffbf00;
   --color-secondary-dark: #201100;
+  --color-tertiary: #faa300;
+  --color-tertiary-light: #ffbf00;
+  --color-tertiary-dark: #201100;
   --color-grey-light-1: #f9f9fa;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -239,7 +242,11 @@ body {
   color: var(--color-black);
   font-family: 'Overlock SC', cursive;
   font-size: 5rem;
-  justify-self: center; }
+  letter-spacing: 0.001rem;
+  justify-self: center;
+  margin: 0.75rem 0; }
+  .quote--person {
+    font-size: 2.5rem; }
 
 /*
     COLORS
