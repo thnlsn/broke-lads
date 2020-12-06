@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 import Quote from './components/Quote';
 
 import Home from './components/viewComponents/About';
+import Creators from './components/viewComponents/Creators';
+import Socials from './components/viewComponents/Socials';
 
 // SVGs
 import skyline from './images/skyline.svg';
@@ -27,8 +29,11 @@ function App() {
     // Depending on what tabState currently is, display the corresponding component
     switch (tabState) {
       case 'home-tab':
+        return <Home />;
       case 'creator-tab':
+        return <Creators />;
       case 'follow-tab':
+        return <Socials />;
     }
   };
 
@@ -42,10 +47,8 @@ function App() {
             subtitle={'"Savages with empty pockets"'}
           />
         </header>
-        <Navigation />
-        <main className='content'>
-          <Home />
-        </main>
+        <Navigation func={changeTab} />
+        <main className='content'>{renderTab()}</main>
         <div className='quotes'>
           {/*           <Quote quote={'"These dudes are HILARIOUS!" - Clark Kent'} />
           <Quote quote={'"Their work just feels so genuine." - Bruce Wayne'} />

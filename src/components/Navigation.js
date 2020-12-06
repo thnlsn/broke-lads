@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const Navigation = () => {
+const Navigation = ({ func }) => {
   return (
     <Fragment>
       <nav className='navigation nav-text u-neg-margin-bottom-tiny'>
@@ -11,6 +11,7 @@ const Navigation = () => {
             name='tab-nav'
             value='home-tab'
             className='navigation__nav-radio'
+            onChange={func}
             defaultChecked // "defaultChecked" and not "checked," otherwise it will check this tab inbetween every attempt to check
           />
           <label
@@ -27,6 +28,7 @@ const Navigation = () => {
             name='tab-nav'
             value='creator-tab'
             className='navigation__nav-radio'
+            onChange={func}
           />
           <label
             htmlFor='creator-tab'
@@ -42,6 +44,7 @@ const Navigation = () => {
             name='tab-nav'
             value='follow-tab'
             className='navigation__nav-radio'
+            onChange={func}
           />
           <label
             htmlFor='follow-tab'
