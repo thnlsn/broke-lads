@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9910a3a4e08423a5831af322f9b9b0d1",
+    "revision": "15064a5ff90db63a3b8c7cf36b786f6d",
     "url": "/broke-lads/index.html"
   },
   {
-    "revision": "ba680ba9e61c32467250",
-    "url": "/broke-lads/static/css/main.608da38d.chunk.css"
+    "revision": "02be84a3772bda748edb",
+    "url": "/broke-lads/static/css/main.bcbc85ce.chunk.css"
   },
   {
-    "revision": "10144a8088b178b376d6",
-    "url": "/broke-lads/static/js/2.3313d2fc.chunk.js"
+    "revision": "d1e7478e7c4d69314a5a",
+    "url": "/broke-lads/static/js/2.5bbf691d.chunk.js"
   },
   {
     "revision": "570d362d673dab785e62d2b8563e1118",
-    "url": "/broke-lads/static/js/2.3313d2fc.chunk.js.LICENSE.txt"
+    "url": "/broke-lads/static/js/2.5bbf691d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba680ba9e61c32467250",
-    "url": "/broke-lads/static/js/main.651a9897.chunk.js"
+    "revision": "02be84a3772bda748edb",
+    "url": "/broke-lads/static/js/main.e621f964.chunk.js"
   },
   {
     "revision": "0aaa999d114b480bd62a",
