@@ -22,7 +22,7 @@
   --line-secondary: 3px solid var(--color-secondary);
   --default-font: 2.5rem;
   --secondary-header-font: 5rem;
-  --header-height: 42.5rem; }
+  --header-height: 32.5rem; }
 
 * {
   margin: 0;
@@ -47,7 +47,7 @@ body {
   background-attachment: fixed; }
 
 ::selection {
-  color: var(--color-secondary-dark);
+  color: var(--color-grey-light-1);
   background-color: var(--color-secondary-light);
   text-shadow: none; }
 
@@ -135,7 +135,8 @@ body {
   background-image: linear-gradient(to bottom, var(--color-grey-dark-1), var(--color-secondary-dark));
   display: flex;
   flex-direction: column;
-  padding: 3.5rem 25% 7.5rem 25%; }
+  padding: 3.5rem 25% 7.5rem 25%;
+  position: relative; }
 
 .footer {
   position: relative; }
