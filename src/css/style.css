@@ -248,6 +248,17 @@ body {
   .quote--person {
     font-size: 2.5rem; }
 
+.work {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .work__container {
+    background-image: linear-gradient(var(--color-secondary-dark), transparent);
+    display: inline-block;
+    flex: 0 0 45%;
+    margin: 1rem; }
+
 /*
     COLORS
 
