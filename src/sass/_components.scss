@@ -26,6 +26,9 @@
     align-items: center;
     justify-content: center;
 
+    // Because the border is pushing the text up, so we put some padding equal to the borders height
+    padding-bottom: var(--nav-border);
+
     flex: 1; // Grow but also take up a third of the nav
     position: relative;
 
@@ -47,9 +50,9 @@
         background-color 0.35s cubic-bezier(1, -0.02, 0, 1),
         border-top 0.35s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-      height: 6px;
+      height: var(--nav-border);
       background-color: var(--color-grey-dark-2);
-      border-top: 6px solid var(--color-grey-dark-2);
+      border-top: var(--nav-border) solid var(--color-grey-dark-2);
       border-left: 1px solid var(--color-grey-dark-2);
       border-right: 1px solid var(--color-grey-dark-2);
     }
@@ -70,6 +73,12 @@
       height: 100%;
       background-color: var(--color-grey-dark-1);
       border-top: var(--line-thick-grey);
+    }
+
+    &:not(:checked) ~ .navigation__tab-button:hover {
+      &:after {
+        border-top: var(--line-thick-secondary);
+      }
     }
   }
 }

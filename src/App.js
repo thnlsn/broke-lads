@@ -1,6 +1,14 @@
 import React, { Fragment, useState } from 'react';
 import './css/style.css';
 
+// COMPONENTS
+import Title from './components/Title';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
+import Quote from './components/Quote';
+
+import Home from './components/viewComponents/About';
+
 // SVGs
 import Skyline from './images/skyline.svg';
 
@@ -12,102 +20,20 @@ function App() {
     <div className='App'>
       <Fragment>
         <header className='header'>
-          <div className='title'>
-            <div className='title__logo-box'>
-              <img src={headerLogo} alt='Logo' className='header__logo' />
-            </div>
-            <div className='title__text-box'>
-              <h1 className='heading-primary'>
-                <span className='heading-primary--main'>Broke Lads</span>
-                <span className='heading-primary--sub'>
-                  "Savages with empty pockets"
-                </span>
-              </h1>
-            </div>
-          </div>
+          <Title
+            logo={headerLogo}
+            title={'Broke Lads'}
+            subtitle={'Savages with empty pockets'}
+          />
         </header>
-        <nav className='navigation nav-text u-neg-margin-bottom-tiny'>
-          <div className='navigation__tab'>
-            <input
-              type='radio'
-              id='home-tab'
-              name='tab-nav'
-              value='home-tab'
-              className='navigation__nav-radio'
-              defaultChecked // "defaultChecked" and not "checked," otherwise it will check this tab inbetween every attempt to check
-            />
-            <label
-              htmlFor='home-tab'
-              className='navigation__tab-button u-unselectable'
-            >
-              Home
-            </label>
-          </div>
-          <div className='navigation__tab'>
-            <input
-              type='radio'
-              id='creator-tab'
-              name='tab-nav'
-              value='creator-tab'
-              className='navigation__nav-radio'
-            />
-            <label
-              htmlFor='creator-tab'
-              className='navigation__tab-button u-unselectable'
-            >
-              Creators
-            </label>
-          </div>
-          <div className='navigation__tab'>
-            <input
-              type='radio'
-              id='follow-tab'
-              name='tab-nav'
-              value='follow-tab'
-              className='navigation__nav-radio'
-            />
-            <label
-              htmlFor='follow-tab'
-              className='navigation__tab-button u-unselectable'
-            >
-              Follow Us!
-            </label>
-          </div>
-        </nav>
+        <Navigation />
         <main className='content'>
-          <div className='heading-secondary u-margin-bottom-medium'>
-            Who are we <span className='emphasis'>?</span>
-          </div>
-          <p className='paragraph paragraph--lined'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            fuga rem eligendi ea iste, qui ut quis animi doloribus atque modi!
-            Porro vel rerum reprehenderit ratione, deserunt provident autem
-            optio? Quo, at! Vitae provident doloribus nesciunt placeat
-            perspiciatis fugit voluptatibus ea molestiae beatae animi sint quia
-            <span className='emphasis'> tempora </span> aut, quas ipsum
-            voluptate iusto inventore, corporis totam? Qui mollitia praesentium
-            explicabo tempore magnam velit accusamus. Doloremque nam placeat ab
-            ducimus sint odio incidunt! Quae, incidunt id nisi maiores qui
-            obcaecati inventore harum vero nobis doloremque consectetur, et a
-            expedita impedit sequi <span className='emphasis'> repellat </span>
-            totam ducimus blanditiis praesentium, dolor dignissimos autem
-            molestias? Error consequatur vitae ex esse maxime odio facilis
-            accusantium iste enim alias est fugiat, perferendis expedita
-            delectus porro eius assumenda laudantium sit saepe quo nulla eum.
-            Est dolorem eligendi numquam culpa earum nulla beatae dolor vitae
-            iure! Maiores, cumque corrupti. Labore, at mollitia dolor adipisci,
-            cumque ipsam nulla praesentium provident quaerat sint porro incidunt
-            consequatur est quis quo quod!
-          </p>
+          <Home />
         </main>
         <div className='quotes'>
-          <div className='quote'>"These dudes are hilarous!" - Clark Kent</div>
-          <div className='quote'>
-            "Their work just feels so genuine." - Bruce Wayne
-          </div>
-          <div className='quote'>
-            "I love the variety of humour." - Diana Prince
-          </div>
+          <Quote quote={'"These dudes are hilarous!" - Clark Kent'} />
+          <Quote quote={'"Their work just feels so genuine." - Bruce Wayne'} />
+          <Quote quote={'"I love the variety of humour." - Diana Prince'} />
         </div>
         <footer className='footer'>
           <img
