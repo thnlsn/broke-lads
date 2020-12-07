@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react';
 
-import TikTokLogo from '../../images/logo-tiktok.svg';
-import sprite from '../../images/sprite.svg';
+import instagramLogo from '../../images/logo-instagram.svg';
+import snapchatLogo from '../../images/logo-snapchat.svg';
+import tiktokLogo from '../../images/logo-tiktok.svg';
+import youtubeLogo from '../../images/logo-youtube.svg';
+import twitchLogo from '../../images/logo-twitch.svg';
 
 const Socials = () => {
   return (
@@ -10,21 +13,33 @@ const Socials = () => {
         <div className='heading-secondary u-margin-bottom-medium'>
           Follow Us <span className='emphasis'>!</span>
         </div>
-        <p className='paragraph paragraph--lined'>
-          <div className='emphasis'>Insta:</div> ---
-          <div className='emphasis'>Spanchat:</div> ---
-          <div className='emphasis'>
-            <svg class='social-logo'>
-              <use
-                xlinkHref={`${sprite}#icon-logo-github`}
-                aria-hidden='true'
-              ></use>
-            </svg>
+        <div className='paragraph paragraph--lined social-container'>
+          <div className='social-link'>
+            <a href='#'>
+              <img className='social-link__logo' src={instagramLogo} alt='' />
+            </a>
           </div>
-          ---
-          <div className='emphasis'>YouTube:</div> ---
-          <div className='emphasis'>Twitch:</div> ---
-        </p>
+          <div className='social-link'>
+            <a href='#'>
+              <img className='social-link__logo' src={snapchatLogo} alt='' />
+            </a>
+          </div>
+          <div className='social-link'>
+            <a href='#'>
+              <img className='social-link__logo' src={tiktokLogo} alt='' />
+            </a>
+          </div>
+          <div className='social-link'>
+            <a href='#'>
+              <img className='social-link__logo' src={youtubeLogo} alt='' />
+            </a>
+          </div>
+          <div className='social-link'>
+            <a href='#'>
+              <img className='social-link__logo' src={twitchLogo} alt='' />
+            </a>
+          </div>
+        </div>
       </div>
     </Fragment>
   );

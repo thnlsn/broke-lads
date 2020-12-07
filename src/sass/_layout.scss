@@ -97,4 +97,11 @@
 
 .socials {
   padding: 3.5rem 25% 7.5rem 25%;
+
+  .social-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4rem 3rem;
+  }
 }

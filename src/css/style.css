@@ -100,9 +100,6 @@ body {
   width: 0;
   visibility: hidden; }
 
-.social-logo {
-  fill: blue; }
-
 .heading-primary {
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1.5rem;
@@ -200,6 +197,10 @@ body {
 
 .socials {
   padding: 3.5rem 25% 7.5rem 25%; }
+  .socials .social-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3rem; }
 
 .navigation {
   background-image: linear-gradient(to bottom, var(--color-black), var(--color-secondary-dark));
@@ -290,6 +291,9 @@ body {
     display: inline-block;
     flex: 0 0 40%;
     margin: 3rem 0; }
+
+.social-link__logo {
+  height: 15rem; }
 
 /*
     COLORS
