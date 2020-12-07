@@ -10,7 +10,6 @@ const Footer = ({ silhouette, copyright }) => {
         alt='Skyline Footer Art'
       />
       <div className='footer__contents'>
-        <div className='spacer'> &nbsp; </div>
         <div className='footer__copyright'>&copy; {copyright}</div>
         <div className='footer__github'>
           <img className='footer__svg' src={github} alt='GitHub Link' />

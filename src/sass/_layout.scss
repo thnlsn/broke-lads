@@ -43,8 +43,12 @@
     box-shadow: var(--shadow-dark); // ------------------------ Testing
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    position: relative;
+
+    transition: all 0.5s;
   }
 
   &__copyright {
@@ -52,13 +56,26 @@
   }
 
   &__github {
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+
+    &:hover {
+      transform: translateY(-1px) scale(1.025);
+      filter: brightness(35);
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(0) scale(1);
+    }
   }
 
   &__svg {
     height: 2.5rem;
     width: 2.5rem;
 
-    filter: invert(1);
+    filter: invert(0.75);
   }
 }
 
@@ -80,4 +97,8 @@
 
 .socials {
   padding: 3.5rem 25% 7.5rem 25%;
+}
+
+.github-logo {
+  fill: blue;
 }
