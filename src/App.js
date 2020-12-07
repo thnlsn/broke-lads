@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './css/style.css';
 
 // COMPONENTS
@@ -18,6 +17,8 @@ import github from './images/logo-github.svg';
 
 // Logo image for the header
 import headerLogo from './images/main-logo.svg';
+
+const routes = [{}];
 
 function App() {
   const [tabState, setTabState] = useState('home-tab');
@@ -41,6 +42,7 @@ function App() {
 
   return (
     <div className='App'>
+      <Router></Router>
       <Fragment>
         <header className='header'>
           <Title
