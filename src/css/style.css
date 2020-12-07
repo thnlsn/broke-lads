@@ -61,6 +61,18 @@ body {
   100% {
     height: var(--header-height); } }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(5deg) translateY(-5px); }
+  50% {
+    transform: rotate(-5deg); }
+  75% {
+    transform: rotate(2deg); }
+  100% {
+    transform: rotate(0deg) translateY(0); } }
+
 .u-overlay {
   position: fixed;
   z-index: 1000;
@@ -292,8 +304,18 @@ body {
     flex: 0 0 40%;
     margin: 3rem 0; }
 
-.social-link__logo {
-  height: 15rem; }
+.social-link {
+  transition: all 0.5s; }
+  .social-link a {
+    display: block;
+    height: 15rem;
+    width: 15rem;
+    cursor: pointer; }
+    .social-link a:hover {
+      animation: wiggle 0.4s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1; }
+  .social-link__logo {
+    height: 100%;
+    width: 100%; }
 
 /*
     COLORS

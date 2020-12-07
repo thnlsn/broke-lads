@@ -15,27 +15,27 @@ const Socials = () => {
         </div>
         <div className='paragraph paragraph--lined social-container'>
           <div className='social-link'>
-            <a href='#'>
+            <a href='https://www.instagram.com/'>
               <img className='social-link__logo' src={instagramLogo} alt='' />
             </a>
           </div>
           <div className='social-link'>
-            <a href='#'>
+            <a href='https://www.snapchat.com/'>
               <img className='social-link__logo' src={snapchatLogo} alt='' />
             </a>
           </div>
           <div className='social-link'>
-            <a href='#'>
+            <a href='https://www.tiktok.com/en/'>
               <img className='social-link__logo' src={tiktokLogo} alt='' />
             </a>
           </div>
           <div className='social-link'>
-            <a href='#'>
+            <a href='https://www.youtube.com/'>
               <img className='social-link__logo' src={youtubeLogo} alt='' />
             </a>
           </div>
           <div className='social-link'>
-            <a href='#'>
+            <a href='https://www.twitch.tv/'>
               <img className='social-link__logo' src={twitchLogo} alt='' />
             </a>
           </div>

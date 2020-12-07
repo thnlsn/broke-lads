@@ -148,8 +148,21 @@
   }
 }
 
+// SINGLE SOCIAL LINK
 .social-link {
-  &__logo {
+  transition: all 0.5s;
+  a {
+    display: block;
     height: 15rem;
+    width: 15rem;
+    cursor: pointer;
+
+    &:hover {
+      animation: wiggle 0.4s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1;
+    }
+  }
+  &__logo {
+    height: 100%;
+    width: 100%;
   }
 }
