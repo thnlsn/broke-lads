@@ -70,8 +70,7 @@
       filter: brightness(35);
     }
 
-    &:active,
-    &:focus {
+    &:active {
       transform: translateY(0) scale(1);
     }
   }
