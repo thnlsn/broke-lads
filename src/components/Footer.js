@@ -11,9 +11,13 @@ const Footer = ({ silhouette, copyright }) => {
       />
       <div className='footer__contents'>
         <div className='footer__copyright'>&copy; {copyright}</div>
-        <div className='footer__github'>
+        <a
+          href='https://github.com/thnlsn/broke-lads'
+          target='_blank'
+          className='footer__github'
+        >
           <img className='footer__svg' src={github} alt='GitHub Link' />
-        </div>
+        </a>
       </div>
     </footer>
   );

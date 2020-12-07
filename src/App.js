@@ -94,5 +94,6 @@ async await
 non-zero index
 eslint error on the empty array of useEffect
 Destructuring
+target='_blank'
 
 */
