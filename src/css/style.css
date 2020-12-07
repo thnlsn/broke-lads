@@ -342,24 +342,23 @@ body {
 .work {
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem; }
   .work__container {
     background-image: linear-gradient(var(--color-secondary-dark), transparent);
     display: inline-block;
-    flex: 0 0 40%;
-    margin: 3rem 0; }
+    flex: 0 0 40%; }
 
 .social-link {
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  animation: wiggle 0.6s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1; }
   .social-link a {
     display: inline-block;
     height: 15rem;
     width: 15rem;
     cursor: pointer; }
     .social-link a:hover {
-      animation: wiggle 0.4s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1; }
-    .social-link a:not(:hover) {
       animation: wiggle 0.4s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1; }
   .social-link__logo {
     height: 100%;
