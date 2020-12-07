@@ -60,7 +60,7 @@ function App() {
           />
           <Quote
             quote={'"Eisner award worthy - truly something to behold."'}
-            person={'A real person, I think they were talking about us'}
+            person={'An important person once said this about something'}
           />
           <Quote
             quote={'"How can you not love these guys?"'}
