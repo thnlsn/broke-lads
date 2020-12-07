@@ -61,11 +61,17 @@ body {
   100% {
     height: var(--header-height); } }
 
+@keyframes tabSwitch {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 @keyframes wiggle {
   0% {
     transform: rotate(0deg); }
   25% {
-    transform: rotate(5deg) translateY(-5px); }
+    transform: rotate(5deg) translateY(-8px); }
   50% {
     transform: rotate(-5deg); }
   75% {
@@ -163,6 +169,9 @@ body {
   display: flex;
   flex-direction: column;
   position: relative; }
+  .content > * {
+    opacity: 1;
+    animation: tabSwitch 1s ease 0s 1; }
 
 .footer {
   position: relative; }
@@ -308,11 +317,13 @@ body {
 .social-link {
   transition: all 0.5s; }
   .social-link a {
-    display: block;
+    display: inline-block;
     height: 15rem;
     width: 15rem;
     cursor: pointer; }
     .social-link a:hover {
+      animation: wiggle 0.4s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1; }
+    .social-link a:not(:hover) {
       animation: wiggle 0.4s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1; }
   .social-link__logo {
     height: 100%;

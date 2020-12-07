@@ -25,6 +25,11 @@
   flex-direction: column;
 
   position: relative;
+
+  & > * {
+    opacity: 1;
+    animation: tabSwitch 1s ease 0s 1;
+  }
 }
 
 .footer {

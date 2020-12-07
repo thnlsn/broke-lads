@@ -55,16 +55,16 @@ function App() {
           <Quote quote={'"Their work just feels so genuine." - Bruce Wayne'} />
           <Quote quote={'"I love their variety of humour" - Diana Prince'} /> */}
           <Quote
+            quote={'"Everything they put out is peak entertainment."'}
+            person={'Someone that DEFINITELY exists'}
+          />
+          <Quote
             quote={'"Eisner award worthy - truly something to behold."'}
-            person={'Some very important person, probably'}
+            person={'A real person, I think they were talking about us'}
           />
           <Quote
             quote={'"How can you not love these guys?"'}
             person={'One of our moms'}
-          />
-          <Quote
-            quote={'"Everything they put out is peak entertainment."'}
-            person={'Someone that "DEFINITELY" exists'}
           />
         </div>
         <Footer

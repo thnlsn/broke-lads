@@ -154,12 +154,15 @@
 .social-link {
   transition: all 0.5s;
   a {
-    display: block;
+    display: inline-block;
     height: 15rem;
     width: 15rem;
     cursor: pointer;
 
     &:hover {
+      animation: wiggle 0.4s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1;
+    }
+    &:not(:hover) {
       animation: wiggle 0.4s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1;
     }
   }
