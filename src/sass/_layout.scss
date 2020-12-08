@@ -104,7 +104,9 @@
 
   .social-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
 
     padding: 4rem 3rem;
   }

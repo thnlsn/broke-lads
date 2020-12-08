@@ -135,18 +135,20 @@
   }
 }
 
-// WORK
+// WORK (The container of all the member sites)
 .work {
   display: flex;
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem; // So they are evenly spaced like a grid almost
+  gap: 5rem; // So they are evenly spaced like a grid almost
+
+  margin-top: 3rem;
 
   &__container {
     background-image: linear-gradient(var(--color-secondary-dark), transparent);
     display: inline-block;
-    flex: 0 0 40%;
+    flex: 0 0 45%;
   }
 }
 

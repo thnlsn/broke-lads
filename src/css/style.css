@@ -186,6 +186,17 @@ body {
     border-bottom: var(--line-secondary);
     padding: 1.75rem 4.5rem; }
 
+.social-text ul {
+  display: inline-block; }
+  .social-text ul li {
+    text-align: left;
+    list-style-type: none;
+    list-style-position: none;
+    list-style-image: none; }
+
+.social-text--email {
+  padding: 0 15%; }
+
 .emphasis {
   color: var(--color-secondary);
   font-size: 1.2em;
@@ -256,7 +267,9 @@ body {
   padding: 3.5rem 25% 7.5rem 25%; }
   .socials .social-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
     padding: 4rem 3rem; }
 
 .navigation {
@@ -341,11 +354,12 @@ body {
   align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem; }
+  gap: 5rem;
+  margin-top: 3rem; }
   .work__container {
     background-image: linear-gradient(var(--color-secondary-dark), transparent);
     display: inline-block;
-    flex: 0 0 40%; }
+    flex: 0 0 45%; }
 
 .social-link {
   animation: wiggle 0.6s cubic-bezier(0, 0.77, 0.37, 0.86) 0s 1; }

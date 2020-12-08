@@ -39,6 +39,39 @@ const Socials = () => {
               <img className='social-link__logo' src={twitchLogo} alt='' />
             </a>
           </div>
+          <p className='social-text'>
+            We post stuff regularly (well, we try too...)
+          </p>
+
+          <p className='social-text'>
+            <p>
+              Feel free to reach out for anything! (seriously... we're pretty
+              lonely) Some reasons to do so might include:
+            </p>
+
+            <ul>
+              <li>
+                <span className='emphasis'>&bull;</span> Commisions for artwork
+              </li>
+              <li>
+                <span className='emphasis'>&bull;</span> Tell us how much you
+                like our stuff
+              </li>
+              <li>
+                <span className='emphasis'>&bull;</span> Tell us how much you
+                hate our stuff
+              </li>
+              <li>
+                <span className='emphasis'>&bull;</span> You're lonely too
+              </li>
+            </ul>
+          </p>
+
+          <p className='social-text social-text--email'>
+            If you'd like to contact us directly, you can message us on any
+            social media or email directly at:{' '}
+            <span className='emphasis'>brokelads@gmail.com</span>
+          </p>
         </div>
       </div>
     </Fragment>

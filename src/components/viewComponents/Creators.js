@@ -4,8 +4,6 @@ const Socials = () => {
   return (
     <Fragment>
       <div className='creators'>
-        <div className='heading-secondary u-margin-bottom-medium'>Our Work</div>
-
         <div className='work'>
           <div className='paragraph paragraph--lined work__container'>
             <p className='work__title'>

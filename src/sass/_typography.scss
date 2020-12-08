@@ -48,6 +48,22 @@
   }
 }
 
+.social-text {
+  ul {
+    display: inline-block;
+    li {
+      text-align: left;
+      list-style-type: none;
+      list-style-position: none;
+      list-style-image: none;
+    }
+  }
+
+  &--email {
+    padding: 0 15%;
+  }
+}
+
 .emphasis {
   color: var(--color-secondary);
   font-size: 1.2em; // Em is based off the parent, so making 20% larger

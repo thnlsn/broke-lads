@@ -34,7 +34,7 @@ const Navigation = ({ func }) => {
             htmlFor='creator-tab'
             className='navigation__tab-button u-unselectable'
           >
-            Creators
+            Our Work
           </label>
         </div>
         <div className='navigation__tab'>
