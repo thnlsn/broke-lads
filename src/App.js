@@ -9,17 +9,17 @@ import PaperSketch from './components/pages/PaperSketch';
 
 const routes = [
   {
-    path: '/',
+    path: '/broke-lads/',
     exact: true,
     main: () => <Homepage></Homepage>,
   },
   {
-    path: '/thevoid',
+    path: '/broke-lads/the-void',
     exact: true,
     main: () => <TheVoid></TheVoid>,
   },
   {
-    path: '/papersketch',
+    path: '/broke-lads/paper-sketch',
     exact: true,
     main: () => <PaperSketch></PaperSketch>,
   },
@@ -43,6 +43,17 @@ function App() {
 }
 
 export default App;
+
+/* 
+
+communicate! ! ! ! !
+Are there any issues right now that I can have in mind while building it?
+Who built it can i talk to them
+Make some mockups
+then ask about backend like how careers aare being fed in
+How are you getting this data for the news
+
+*/
 
 /* 
 

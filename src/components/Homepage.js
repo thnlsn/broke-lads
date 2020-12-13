@@ -37,7 +37,7 @@ const Homepage = () => {
   };
 
   return (
-    <Fragment>
+    <div className='landing-page'>
       <header className='header'>
         <Title
           logo={'headerLogo'}
@@ -54,7 +54,7 @@ const Homepage = () => {
         />
         <Quote
           quote={'"Eisner award worthy - truly something to behold."'}
-          person={'An important person once said this about something'}
+          person={'Someone probably said this about something'}
         />
         <Quote
           quote={'"How can you not love these guys?"'}
@@ -65,7 +65,7 @@ const Homepage = () => {
         silhouette={skyline}
         copyright={'2020 by Broke Lads. All rights reserved.'}
       />
-    </Fragment>
+    </div>
   );
 };
 

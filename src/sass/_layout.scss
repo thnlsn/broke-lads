@@ -6,7 +6,6 @@
   position: relative;
 
   // So the rest of the page scrolls over the header
-  z-index: -1;
 
   animation: 1s cubic-bezier(1, 0.01, 0.4, 1.28) 0s 1 headerShrink;
 }

@@ -16,21 +16,6 @@ html {
 
 body {
   min-height: 100vh;
-
-  // Most basic level font, for all the paragraphs
-  font-family: 'Patrick Hand', cursive;
-  font-weight: 400;
-  line-height: normal;
-  color: var(--color-grey-light-1);
-
-  // Background of the whole page
-  background: radial-gradient(
-    var(--color-grey-light-1),
-    var(--color-secondary-light),
-    var(--color-secondary),
-    var(--color-secondary-dark)
-  );
-  background-attachment: fixed;
 }
 
 ::selection {

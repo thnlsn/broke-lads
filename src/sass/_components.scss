@@ -1,5 +1,6 @@
 // NAVIGATION BAR
 .navigation {
+  z-index: 1000;
   background-image: linear-gradient(
     to bottom,
     var(--color-black),
@@ -31,8 +32,6 @@
 
     flex: 1; // Grow but also take up a third of the nav
     position: relative;
-
-    z-index: 1;
 
     transition: all 0.45s;
 
@@ -96,6 +95,8 @@
       var(--color-primary-dark)
     );
 
+    z-index: -1;
+
     // This is so that the height and width are always the same and scaled to whatever the --header-height is, and will have a small percentage of it clipped outside of the header itself
     height: calc(
       var(--header-height) + (0.133333333333 * var(--header-height))
@@ -118,6 +119,7 @@
 
   // This will target the logo behind the words
   &__logo {
+    /* z-index: -2; */
   }
 }
 
