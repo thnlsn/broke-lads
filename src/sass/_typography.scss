@@ -1,5 +1,17 @@
 // Nothing here should affect anything other than the normal font properties
 
+/* 
+
+font-family: 'Bangers', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Prata', serif;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Kalam', cursive;
+
+*/
+
 .heading-primary {
   // Main heading font (might become an image later on)
   font-family: 'Bowlby One SC', cursive;
@@ -23,9 +35,24 @@
   }
 }
 
+.navigation__tab {
+  // font-family: 'Overlock SC', cursive;
+  // font-family: 'Bowlby One SC', cursive;
+  // letter-spacing: 0.5rem;
+  // font-family: 'Bangers', cursive;
+  font-family: 'Permanent Marker', cursive;
+
+  font-size: 4rem;
+  @include text-stroke(var(--color-secondary), 0.5px);
+}
+
 .heading-secondary {
   // Secondary heading font
-  font-family: 'Overlock SC', cursive;
+
+  // font-family: 'Overlock SC', cursive;
+  // font-family: 'Bangers', cursive;
+  font-family: 'Permanent Marker', cursive;
+
   color: var(--color-grey-light-3);
   font-size: 5rem;
 
@@ -36,6 +63,11 @@
 
 .paragraph {
   font-size: var(--default-font);
+
+  // font-family: 'Patrick Hand', cursive;
+  font-family: 'Kalam', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+
   text-align: center;
   line-height: 3.75rem;
   letter-spacing: 0.3rem;
@@ -71,4 +103,5 @@
 
   // Not sure if I'll keep this...
   @include text-stroke(var(--color-secondary-dark), 1.5px);
+  font-family: 'Permanent Marker', cursive;
 }

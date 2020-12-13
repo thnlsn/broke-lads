@@ -148,6 +148,17 @@ body {
   width: 0;
   visibility: hidden; }
 
+/* 
+
+font-family: 'Bangers', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Prata', serif;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Kalam', cursive;
+
+*/
 .heading-primary {
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1.5rem;
@@ -162,8 +173,13 @@ body {
   .heading-primary--sub {
     font-size: 4rem; }
 
+.navigation__tab {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+  text-shadow: -0.5px -0.5px 0 var(--color-secondary), 0.5px -0.5px 0 var(--color-secondary), -0.5px 0.5px 0 var(--color-secondary), 0.5px 0.5px 0 var(--color-secondary); }
+
 .heading-secondary {
-  font-family: 'Overlock SC', cursive;
+  font-family: 'Permanent Marker', cursive;
   color: var(--color-grey-light-3);
   font-size: 5rem;
   text-shadow: -1.5px -1.5px 0 var(--color-grey-dark-1), 1.5px -1.5px 0 var(--color-grey-dark-1), -1.5px 1.5px 0 var(--color-grey-dark-1), 1.5px 1.5px 0 var(--color-grey-dark-1);
@@ -171,6 +187,8 @@ body {
 
 .paragraph {
   font-size: var(--default-font);
+  font-family: 'Kalam', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
   line-height: 3.75rem;
   letter-spacing: 0.3rem; }
@@ -195,7 +213,8 @@ body {
   color: var(--color-secondary);
   font-size: 1.2em;
   line-height: 0.8em;
-  text-shadow: -1.5px -1.5px 0 var(--color-secondary-dark), 1.5px -1.5px 0 var(--color-secondary-dark), -1.5px 1.5px 0 var(--color-secondary-dark), 1.5px 1.5px 0 var(--color-secondary-dark); }
+  text-shadow: -1.5px -1.5px 0 var(--color-secondary-dark), 1.5px -1.5px 0 var(--color-secondary-dark), -1.5px 1.5px 0 var(--color-secondary-dark), 1.5px 1.5px 0 var(--color-secondary-dark);
+  font-family: 'Permanent Marker', cursive; }
 
 .landing-page {
   min-height: 100vh;
@@ -283,10 +302,7 @@ body {
   .navigation__tab {
     display: flex;
     flex: 1 0 33.3333333333%;
-    z-index: 1;
-    font-family: 'Overlock SC', cursive;
-    font-size: 4rem;
-    text-shadow: -0.5px -0.5px 0 var(--color-secondary), 0.5px -0.5px 0 var(--color-secondary), -0.5px 0.5px 0 var(--color-secondary), 0.5px 0.5px 0 var(--color-secondary); }
+    z-index: 1; }
   .navigation__tab-button {
     display: flex;
     align-items: center;

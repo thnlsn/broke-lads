@@ -16,10 +16,6 @@
     flex: 1 0 33.3333333333%; // Grow but also take up a third of the nav
 
     z-index: 1;
-
-    font-family: 'Overlock SC', cursive;
-    font-size: 4rem;
-    @include text-stroke(var(--color-secondary), 0.5px);
   }
 
   &__tab-button {
