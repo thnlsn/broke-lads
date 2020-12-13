@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3323e265867bdf59344a6a2cb9f2c54b",
+    "revision": "9381a351792e8cfb3e2513ddb5cf08f8",
     "url": "/broke-lads/index.html"
   },
   {
-    "revision": "d660c4eaf97839d3d31d",
-    "url": "/broke-lads/static/css/main.866f857d.chunk.css"
+    "revision": "3fffcd4ab8f67769ba4c",
+    "url": "/broke-lads/static/css/main.7610d3bc.chunk.css"
   },
   {
     "revision": "cd3b11b7041ebbab9110",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/broke-lads/static/js/2.169b9f01.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d660c4eaf97839d3d31d",
-    "url": "/broke-lads/static/js/main.3959ea7b.chunk.js"
+    "revision": "3fffcd4ab8f67769ba4c",
+    "url": "/broke-lads/static/js/main.2c0a7c60.chunk.js"
   },
   {
     "revision": "0aaa999d114b480bd62a",
