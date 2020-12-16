@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/broke-lads/static/css/main.7610d3bc.chunk.css",
-    "main.js": "/broke-lads/static/js/main.2c0a7c60.chunk.js",
-    "main.js.map": "/broke-lads/static/js/main.2c0a7c60.chunk.js.map",
+    "main.css": "/broke-lads/static/css/main.fe30bb61.chunk.css",
+    "main.js": "/broke-lads/static/js/main.bbe5d494.chunk.js",
+    "main.js.map": "/broke-lads/static/js/main.bbe5d494.chunk.js.map",
     "runtime-main.js": "/broke-lads/static/js/runtime-main.b4f12ae3.js",
     "runtime-main.js.map": "/broke-lads/static/js/runtime-main.b4f12ae3.js.map",
     "static/js/2.169b9f01.chunk.js": "/broke-lads/static/js/2.169b9f01.chunk.js",
     "static/js/2.169b9f01.chunk.js.map": "/broke-lads/static/js/2.169b9f01.chunk.js.map",
     "index.html": "/broke-lads/index.html",
-    "precache-manifest.b3f70345d99802a1fe487cf63af32b2f.js": "/broke-lads/precache-manifest.b3f70345d99802a1fe487cf63af32b2f.js",
+    "precache-manifest.5a87f775b58c0623d3387df1153a5289.js": "/broke-lads/precache-manifest.5a87f775b58c0623d3387df1153a5289.js",
     "service-worker.js": "/broke-lads/service-worker.js",
-    "static/css/main.7610d3bc.chunk.css.map": "/broke-lads/static/css/main.7610d3bc.chunk.css.map",
+    "static/css/main.fe30bb61.chunk.css.map": "/broke-lads/static/css/main.fe30bb61.chunk.css.map",
     "static/js/2.169b9f01.chunk.js.LICENSE.txt": "/broke-lads/static/js/2.169b9f01.chunk.js.LICENSE.txt",
     "static/media/logo-github.svg": "/broke-lads/static/media/logo-github.79a9108d.svg",
     "static/media/logo-instagram.svg": "/broke-lads/static/media/logo-instagram.1e06381d.svg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.b4f12ae3.js",
     "static/js/2.169b9f01.chunk.js",
-    "static/css/main.7610d3bc.chunk.css",
-    "static/js/main.2c0a7c60.chunk.js"
+    "static/css/main.fe30bb61.chunk.css",
+    "static/js/main.bbe5d494.chunk.js"
   ]
 }
